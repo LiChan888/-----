@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>宫月云 · 口述校史档案</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=IBM+Plex+Mono:wght@400;500&family=Ma+Shan+Zheng&family=Noto+Serif+SC:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/common.css" />
+<style>
+  .hero{ padding:56px 0 20px; }
+  .hero .card{ padding:40px 36px 30px; }
+  .hero__top{ display:flex; justify-content:space-between; align-items:flex-start; gap:16px; }
+  .hero__row{ display:flex; align-items:center; gap:20px; }
+  .hero__avatar{
+    flex:0 0 auto;
+    width:96px; height:96px;
+    border-radius:50%;
+    overflow:hidden;
+    border:2px solid var(--blueblack);
+    box-shadow:inset 0 0 0 3px var(--cardface);
+  }
+  .hero__avatar img{ width:100%; height:100%; object-fit:cover; display:block; }
+  .hero__meta{
+    font-family:var(--font-mono); font-size:12px;
+    letter-spacing:.18em; color:var(--blueblack);
+    text-transform:uppercase; line-height:2;
+  }
+  .hero__meta .shelf{ display:block; font-size:12px; color:rgba(32,43,62,.5); }
+  .hero__name{
+    font-family:var(--font-display); font-weight:900;
+    font-size:58px; line-height:1.08; letter-spacing:.06em;
+    margin:26px 0 6px;
+  }
+  .hero__role{
+    font-size:17px; color:var(--blueblack); letter-spacing:.04em;
+    padding-bottom:22px; border-bottom:1px solid rgba(32,43,62,.2);
+  }
+  .hero__role .mono{ font-family:var(--font-mono); font-size:14px; }
+  .hero__quote{
+    margin-top:22px; font-size:17px; line-height:2; color:var(--ink);
+    padding-left:18px; border-left:3px solid var(--stamp); font-style:normal;
+  }
+  .hero__quote .who{
+    display:block; margin-top:10px; font-family:var(--font-sign);
+    font-size:22px; color:var(--blueblack); letter-spacing:.1em;
+  }
+  .hero__foot{ margin-top:22px; }
+
+  .crumb{
+    padding:20px 0 0; font-family:var(--font-mono); font-size:13px;
+    letter-spacing:.1em; color:rgba(32,43,62,.6);
+  }
+  .crumb a{ color:var(--blueblack); }
+  .crumb a:hover{ color:var(--stamp); }
+
+  /* 座谈会发言原话 */
+  .speech{ padding:64px 0 8px; }
+  .speech .card{ padding:30px 32px 26px; }
+  .speech__scene{
+    font-family:var(--font-mono); font-size:13px; letter-spacing:.12em;
+    color:var(--stamp); text-transform:uppercase;
+    padding-bottom:12px; border-bottom:1px dashed rgba(32,43,62,.22);
+    margin-bottom:22px;
+  }
+  .speech__body p{
+    font-size:17px; line-height:2.1; margin-bottom:18px; text-align:justify;
+    color:var(--ink);
+  }
+  .speech__body p:last-child{ margin-bottom:0; }
+  .speech__body .quote{
+    border-left:3px solid var(--stamp); padding-left:14px; font-weight:500;
+    color:var(--blueblack);
+  }
+  .speech__sign{
+    display:flex; align-items:flex-end; justify-content:space-between; gap:14px;
+    margin-top:22px; padding-top:14px; border-top:1px dashed rgba(32,43,62,.16);
+  }
+  .speech__sign .name{
+    font-family:var(--font-sign); font-size:26px; color:var(--blueblack);
+    letter-spacing:.12em; transform:rotate(-2deg); transform-origin:left bottom;
+  }
+  .speech__sign .role{
+    font-family:var(--font-mono); font-size:12px; letter-spacing:.14em;
+    color:rgba(32,43,62,.45); text-align:right; line-height:1.7;
+  }
+
+  @media (max-width:560px){
+    .hero__name{ font-size:44px; }
+    .hero__row{ gap:14px; }
+    .hero__avatar{ width:72px; height:72px; }
+  }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav__inner">
+    <a class="nav__brand" href="index.html">
+      <span class="badge-logo"><img src="assets/team/badge.jpg" alt="满井溯源·理苑拾光 队徽" /></span>
+      <span class="nav__name">满井溯源·理苑拾光<small>Oral History Archive</small></span>
+    </a>
+    <div class="nav__links">
+      <a class="nav__link" href="index.html#about">关于我们</a>
+      <div class="nav__dropdown">
+        <a class="nav__link is-active" href="index.html#pillars">钢铁脊梁<span class="nav__caret">▾</span></a>
+        <div class="nav__menu" role="menu">
+          <a class="nav__menu-item" href="qinbenyi.html">秦本一</a>
+          <a class="nav__menu-item" href="chenli.html">陈力</a>
+          <a class="nav__menu-item" href="wangzhongyi.html">王忠忆</a>
+          <a class="nav__menu-item" href="hanjuyuan.html">韩菊元</a>
+          <a class="nav__menu-item" href="gaozhengkai.html">高征铠</a>
+          <a class="nav__menu-item" href="zhaochengping.html">赵承平</a>
+          <a class="nav__menu-item" href="gongmingying.html">龚明英</a>
+          <a class="nav__menu-item" href="qiaozhiyu.html">乔芝郁</a>
+          <a class="nav__menu-item" href="gongyueyun.html">宫月云</a>
+          <a class="nav__menu-item" href="chennanxian.html">陈难先</a>
+          <a class="nav__menu-item" href="lifushen.html">李福燊</a>
+          <a class="nav__menu-item" href="zuoyonglin.html">左永林</a>
+          <a class="nav__menu-item" href="lushouli.html">鹿守理</a>
+          <a class="nav__menu-item" href="shixizheng.html">史希正</a>
+        </div>
+      </div>
+      <a class="nav__link" href="index.html#contact">联系我们</a>
+    </div>
+  </div>
+</nav>
+
+<div class="wrap">
+
+  <div class="crumb"><a href="index.html">首页</a> / <a href="index.html#pillars">钢铁脊梁</a> / 宫月云</div>
+
+  <header class="hero">
+    <div class="card">
+      <div class="hero__top">
+        <div class="hero__row">
+          <span class="hero__avatar"><img src="assets/team/gongyueyun.jpg" alt="宫月云" /></span>
+          <div class="hero__meta">
+            理苑拾光小队 · 口述校史档案
+            <span class="shelf">INTERVIEW ARCHIVE · 校史溯源座谈会</span>
+          </div>
+        </div>
+        <div class="stamp stamp--lg">口述实录</div>
+      </div>
+
+      <h1 class="hero__name">宫月云</h1>
+      <p class="hero__role"><span class="mono">ALUMNI ASSOCIATION</span>　燕园校友会第四任会长</p>
+
+      <blockquote class="hero__quote">
+        每个老师都是一个宝藏。钢铁精神，这不是一个人提出的口号，这是一代一代的人用他们的实际行动提炼、铸就出来的。
+        <span class="who">—— 宫月云</span>
+      </blockquote>
+
+      <div class="stamps-row hero__foot">
+        <span>校史溯源</span><span>校史溯源</span><span>校史溯源</span><span>校史溯源</span><span>校史溯源</span>
+      </div>
+    </div>
+  </header>
+
+  <section class="speech reveal">
+    <div class="section-head">
+      <div class="eyebrow">Oral Statement</div>
+      <h2><span class="en">TRANSCRIPT</span>座谈会发言</h2>
+    </div>
+    <div class="card">
+      <div class="speech__scene">校史溯源工作启动座谈会 · 燕园养老社区 · 现场发言实录</div>
+      <div class="speech__body">
+                <p>讲两句好，大家好，刚才听了各位老师的发言，我也非常的感慨，因为我比你们都年轻。这从咱们四任的会长就可以看出来，我们第一任会长陆老师今年都 93 岁了，第二任会长是咱们乔老师 88 岁了，第三任会长史老师是今年 86 岁，我是第四任的会长，今年 80 岁。所以呢，我们都是 80 后的人了。但是呢，今天见到这些学生们，我特别高兴。我说看见他们吧，老师们感觉看到了年轻的自己。我说我看他们就像我的孙子孙女一样，真的看着你们特别的喜爱。</p>
+        <p>所以呢，咱们今天在这儿，新老的，就我们在校的和我们的老校友们共聚一堂开启了一个校史追溯，这么一个非常有意义的活动，我觉得这个只是一个启动仪式。我们的老校友们，我今天看到在座我就特别的感动了。我们在测的一共 45 个人，今天来了 28 个人，占 62%。所以呢，你就说明你看周边轮椅都摆了好几辆，对不对啊？大家就克服了困难，都来参加咱们这个座谈会。这说明什么？说明我们对母校的热爱，说明我们心里都牵挂着母校。</p>
+        <p>我们所有的这些老校友都是在学校的这个发展过程中在时代的这个大潮中都是一朵浪花，你们就到这儿来挖宝来了，每个老师都是一个宝藏。所以我们下一步呢，准备就和郑老师一起商量，我们 25 号今天启动，到 8 月 6 号这十天里头，我们可能会采取一对一，还有呢小组讨论。</p>
+        <p>我觉得我们这些老校友们都应该在我们的校史里头占据一席之地，这就是我们的一个机会。我们要把自己的青春在这次活动中，我们重新把它挖掘出来。然后呢，让它还要教育我们的孩子们，要把我们的就这种钢铁精神，这不是一个人提出的口号，这是一代一代的人用他们的实际行动提炼，铸就出来的。所以我们要把这种精神体现在我们这些老校友的身上，每个人都有这个钢铁的精神。</p>
+        <p>这个活动也是我上任以来组织的第一个大活动，我非常希望它能够成功，为我们燕园的校友会我们也做出一个贡献出来。</p>
+      </div>
+      <div class="speech__sign">
+        <span class="name">宫月云</span>
+        <span class="role">发言实录 · 未经删改</span>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer reveal">
+    <div class="card">
+      <div class="footer__title">采编档案 · EDITORIAL NOTE</div>
+      <p>本文档为“校史溯源”社会实践团于燕园养老社区召开的校史溯源工作启动座谈会现场发言实录，由理苑拾光小队整理。</p>
+      <div class="crew">座谈时间：2026.7.25　座谈地点：燕园养老社区</div>
+    </div>
+  </footer>
+
+</div>
+
+<script>
+  (function(){
+    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var els = document.querySelectorAll('.reveal');
+    if(reduce || !('IntersectionObserver' in window)){
+      els.forEach(function(el){ el.classList.add('is-in'); });
+      return;
+    }
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if(e.isIntersecting){ e.target.classList.add('is-in'); io.unobserve(e.target); }
+      });
+    }, { threshold:0.12 });
+    els.forEach(function(el){ io.observe(el); });
+  })();
+</script>
+</body>
+</html>

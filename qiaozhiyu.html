@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>乔芝郁 · 口述校史档案</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=IBM+Plex+Mono:wght@400;500&family=Ma+Shan+Zheng&family=Noto+Serif+SC:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/common.css" />
+<style>
+  .hero{ padding:56px 0 20px; }
+  .hero .card{ padding:40px 36px 30px; }
+  .hero__top{ display:flex; justify-content:space-between; align-items:flex-start; gap:16px; }
+  .hero__meta{
+    font-family:var(--font-mono);
+    font-size:11px;
+    letter-spacing:.18em;
+    color:var(--blueblack);
+    text-transform:uppercase;
+    line-height:2;
+  }
+  .hero__meta .shelf{ display:block; font-size:10px; color:rgba(32,43,62,.5); }
+  .hero__name{
+    font-family:var(--font-display);
+    font-weight:900;
+    font-size:72px;
+    line-height:1.05;
+    letter-spacing:.06em;
+    margin:30px 0 6px;
+  }
+  .hero__role{
+    font-size:17px;
+    color:var(--blueblack);
+    letter-spacing:.04em;
+    padding-bottom:22px;
+    border-bottom:1px solid rgba(32,43,62,.2);
+  }
+  .hero__role .mono{ font-family:var(--font-mono); font-size:14px; }
+  .hero__quote{
+    margin-top:22px;
+    font-size:16px;
+    line-height:2;
+    color:var(--ink);
+    padding-left:18px;
+    border-left:3px solid var(--stamp);
+    font-style:normal;
+  }
+  .hero__quote .who{
+    display:block;
+    margin-top:10px;
+    font-family:var(--font-sign);
+    font-size:22px;
+    color:var(--blueblack);
+    letter-spacing:.1em;
+  }
+
+  .crumb{
+    padding:20px 0 0;
+    font-family:var(--font-mono);
+    font-size:12px;
+    letter-spacing:.1em;
+    color:rgba(32,43,62,.6);
+  }
+  .crumb a{ color:var(--blueblack); }
+  .crumb a:hover{ color:var(--stamp); }
+
+  .photos{ padding:64px 0 8px; }
+  .photos__grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:22px; }
+  .photo{
+    background:#FBF9F2;
+    padding:9px 9px 0;
+    box-shadow:0 1px 2px rgba(32,43,62,.12), 0 8px 20px -10px rgba(32,43,62,.4);
+  }
+  .photo:nth-child(1){ transform:rotate(-1.6deg); }
+  .photo:nth-child(2){ transform:rotate(1.2deg); }
+  .photo:nth-child(3){ transform:rotate(-.6deg); }
+  .photo img{ display:block; width:100%; height:auto; filter:sepia(.1) contrast(1.02) saturate(.94); }
+  .photo figcaption{
+    display:flex; align-items:center; justify-content:space-between; gap:8px;
+    padding:8px 2px 6px;
+  }
+  .photo figcaption .cap{ font-family:var(--font-sign); font-size:16px; color:var(--blueblack); }
+  .photo figcaption .no{ font-family:var(--font-mono); font-size:10px; letter-spacing:.1em; color:rgba(32,43,62,.5); }
+
+  @media (max-width:640px){
+    .hero__name{ font-size:54px; }
+  }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav__inner">
+    <a class="nav__brand" href="index.html">
+      <span class="badge-logo"><img src="assets/team/badge.jpg" alt="满井溯源·理苑拾光 队徽" /></span>
+      <span class="nav__name">满井溯源·理苑拾光<small>Oral History Archive</small></span>
+    </a>
+    <div class="nav__links">
+      <a class="nav__link" href="index.html#about">关于我们</a>
+      <div class="nav__dropdown">
+        <a class="nav__link is-active" href="index.html#pillars">钢铁脊梁<span class="nav__caret">▾</span></a>
+        <div class="nav__menu" role="menu">
+          <a class="nav__menu-item" href="qinbenyi.html">秦本一</a>
+          <a class="nav__menu-item" href="chenli.html">陈力</a>
+          <a class="nav__menu-item" href="wangzhongyi.html">王忠忆</a>
+          <a class="nav__menu-item" href="hanjuyuan.html">韩菊元</a>
+          <a class="nav__menu-item" href="gaozhengkai.html">高征铠</a>
+          <a class="nav__menu-item" href="zhaochengping.html">赵承平</a>
+          <a class="nav__menu-item" href="gongmingying.html">龚明英</a>
+          <a class="nav__menu-item" href="qiaozhiyu.html">乔芝郁</a>
+          <a class="nav__menu-item" href="gongyueyun.html">宫月云</a>
+          <a class="nav__menu-item" href="chennanxian.html">陈难先</a>
+          <a class="nav__menu-item" href="lifushen.html">李福燊</a>
+          <a class="nav__menu-item" href="zuoyonglin.html">左永林</a>
+          <a class="nav__menu-item" href="lushouli.html">鹿守理</a>
+          <a class="nav__menu-item" href="shixizheng.html">史希正</a>
+        </div>
+      </div>
+      <a class="nav__link" href="index.html#contact">联系我们</a>
+    </div>
+  </div>
+</nav>
+
+<div class="wrap">
+
+  <div class="crumb"><a href="index.html">首页</a> / <a href="index.html#pillars">钢铁脊梁</a> / 乔芝郁</div>
+
+  <header class="hero">
+    <div class="card">
+      <div class="hero__top">
+        <div class="hero__meta">
+          理苑拾光小队 · 口述校史档案
+          <span class="shelf">INTERVIEW ARCHIVE</span>
+        </div>
+        <div class="stamp stamp--lg">口述实录</div>
+      </div>
+      <h1 class="hero__name">乔芝郁</h1>
+      <p class="hero__role">
+        <span class="mono">USTB-1957</span>　北京钢铁学院 1957 级 · 金属物理化学 · 稀有金属冶金 · 教授 · 博士生导师
+      </p>
+      <blockquote class="hero__quote">
+        钢铁精神最主要的一条，就是爱国情怀和家国担当。
+        <span class="who">—— 乔芝郁</span>
+      </blockquote>
+    </div>
+  </header>
+
+   <section class="photos reveal">
+    <div class="section-head">
+      <div class="eyebrow">Photos</div>
+      <h2><span class="en">ARCHIVE PHOTOS</span>档案照片</h2>
+    </div>
+    <div class="photos__grid">
+      <figure class="photo">
+        <img src="assets/photos/qiaozhiyu-1.jpg" alt="采访乔芝郁教授 · 现场之一" loading="lazy" />
+        <figcaption><span class="cap">采访现场</span><span class="no">PH-01</span></figcaption>
+      </figure>
+      <figure class="photo">
+        <img src="assets/photos/qiaozhiyu-2.jpg" alt="采访乔芝郁教授 · 现场之二" loading="lazy" />
+        <figcaption><span class="cap">采访现场</span><span class="no">PH-02</span></figcaption>
+      </figure>
+      <figure class="photo">
+        <img src="assets/photos/qiaozhiyu-3.jpg" alt="采访乔芝郁教授 · 现场之三" loading="lazy" />
+        <figcaption><span class="cap">采访现场</span><span class="no">PH-03</span></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="dossier reveal">
+    <div class="section-head">
+      <div class="eyebrow">Dossier</div>
+      <h2><span class="en">PERSONNEL FILE</span>人物档案</h2>
+    </div>
+    <div class="card">
+      <div class="dossier__row">
+        <div class="dossier__label">求学</div>
+        <div class="dossier__value">1956 年从留苏预备部转入北京钢铁学院，1957 年入<em>金属物理化学专业</em>（首届，由柯俊、魏寿昆两位院士主持创办）。</div>
+      </div>
+      <div class="dossier__row">
+        <div class="dossier__label">专业履历</div>
+        <div class="dossier__value">1960 年任助教，调入冶金物理化学教研组，参与筹建稀有金属（稀有和稀土金属）专业；1987 年任副主任，1991 年破格晋升教授。</div>
+      </div>
+      <div class="dossier__row">
+        <div class="dossier__label">学术</div>
+        <div class="dossier__value">1993 年经国务院批准为第四批博士导师；师承魏寿昆院士，长期从事熔盐电解制取稀土金属研究。</div>
+      </div>
+      <div class="dossier__row">
+        <div class="dossier__label">成果</div>
+        <div class="dossier__value">专著《熔盐化学与电化学》获冶金部优秀科技图书奖；获国务院特殊津贴。</div>
+      </div>
+      <div class="dossier__row">
+        <div class="dossier__label">校友身份</div>
+        <div class="dossier__value">燕园校友会第二任会长。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="timeline reveal">
+    <div class="section-head">
+      <div class="eyebrow">Chronology</div>
+      <h2><span class="en">TIMELINE</span>年谱</h2>
+    </div>
+    <ul class="timeline__list">
+      <li class="timeline__item is-key">
+        <div class="timeline__year">1956</div>
+        <div class="timeline__text">从留苏预备部转入北京钢铁学院理化系。</div>
+      </li>
+      <li class="timeline__item is-key">
+        <div class="timeline__year">1957</div>
+        <div class="timeline__text">入金属物理化学专业（首届）。</div>
+      </li>
+      <li class="timeline__item">
+        <div class="timeline__year">1960</div>
+        <div class="timeline__text">任助教，调入冶金物理化学教研组，参与筹建稀有金属专业。</div>
+      </li>
+      <li class="timeline__item">
+        <div class="timeline__year">1987</div>
+        <div class="timeline__text">任副主任。</div>
+      </li>
+      <li class="timeline__item is-key">
+        <div class="timeline__year">1991</div>
+        <div class="timeline__text">破格晋升教授，任魏寿昆院士博士生副导师。</div>
+      </li>
+      <li class="timeline__item is-key">
+        <div class="timeline__year">1993</div>
+        <div class="timeline__text">经国务院批准为第四批博士导师。</div>
+      </li>
+      <li class="timeline__item">
+        <div class="timeline__year">至今</div>
+        <div class="timeline__text">任燕园校友会第二任会长，仍活跃于校史传承。</div>
+      </li>
+    </ul>
+  </section>
+
+  <section class="qa reveal">
+    <div class="section-head">
+      <div class="eyebrow">Oral History</div>
+      <h2><span class="en">QUESTION &amp; ANSWER</span>口述问答</h2>
+    </div>
+
+    <div class="qa__list">
+
+      <article class="card">
+        <div class="card__head">
+          <div class="card__code"><b>Q-01</b> · 口述访谈</div>
+          <div class="stamp stamp--sm">口述</div>
+        </div>
+        <h3 class="card__q"><span class="asker">问 · 队员</span>您五六年转入钢院理化系，当时钢院建校仅四年，教学条件还十分艰苦。您对学校的第一印象是什么？</h3>
+        <div class="card__a">
+          <p>建校阶段的历史我还不是太清楚，我是五六年从留苏预备部转到钢铁学院来的，只能从五六年以后叙述。五六年有几件新事情：柯俊院士和魏寿昆院士主持成立了金属物理和金属物理化学专业。柯俊院士专门到留苏预备部来介绍，我们大概十个人就报了金属物理化学专业，是五七年的第一届。这两个专业都是五年半学制，特点是理工结合。</p>
+          <p>“钢老三”说的不完全是体育，从实际上说水平也很高。柯俊先生从国外回来，先担任北大物理系金属物理教研室主任，后来建议钢铁学院成立金属物理专业，同时兼任北大金属物理教研室主任。六二年北大物理系一组学生都到科大来做毕业论文，所以“钢老三”名不虚传。</p>
+          <p>我想主要介绍特种冶金系的成立。我是五七年到钢院，六零年调到冶金物理化学教研组，成立稀有金属教研组，一边筹建稀有金属专业，一边学习，最后拿到文凭。</p>
+          <p>稀有金属专业当时叫稀有和稀土金属专业。50 年代中国非常缺乏稀有金属人才。包头稀土矿当时是作为铁矿开采的，稀土资源在炼钢炉渣里，日本人拼命买我们的炉渣；攀枝花矿主要是有钛和钒。冶金部和有色金属研究院就协助钢铁学院成立稀有金属专业。</p>
+          <p>成立时没有老师，就两个年轻教师——一个五一年清华毕业教物理化学，一个五六年冶金系毕业，带着还没毕业的大学生筹建。大家一起下厂实践学习。高芸生院长提出“一参三改三结合”，强调理论联系实际，我带着一个班到湖南株洲一个厂待了一年多，一边劳动、一边上课、一边学习，上课包括化学、数学、外语。</p>
+          <p>还是根据国家需要。北大徐光宪主要搞分离冶金，我们主要搞熔盐电解，通过熔盐电解制取稀土金属。50 年代根据国家需要把这个专业建设起来，培养了一大批稀有金属人才，到现在国家重要稀土、稀有金属工厂里很多重要人员都是钢铁学院毕业的。</p>
+          <p>特种冶金系为什么成立？也是国家的需要。第一颗人造卫星里的材料，就是学校材料系金相教研组研究的。国防工业需要材料，学校党委决定成立特种冶金系，设了五个教研室——保密代号 11 稀土稀有金属、12 粉末冶金、13 精密合金、14 高温合金、15 特种压力加工，还有特种冶金，大概六个。目的就是跟国防工业更好配合、培养人才。文革后又合并了。特种冶金系的成立，应该是学校很重要的一章。</p>
+        </div>
+        <div class="card__sign">
+          <span class="name">乔芝郁</span>
+          <span class="role">受访人 · 口述</span>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__head">
+          <div class="card__code"><b>Q-02</b> · 口述访谈</div>
+          <div class="stamp stamp--sm">口述</div>
+        </div>
+        <h3 class="card__q"><span class="asker">问 · 队员</span>建校初期，学校在一五计划工业建设背景下，服务于钢铁工业发展需要。这种办学使命对一代代钢院人产生了怎样的影响？</h3>
+        <div class="card__a">
+          <p>影响当然很深，培养了一大批建设国家的人才。比如七一勋章获得者钟掘，是冶金机械系六零届，分到中南大学，做大型、中型机械设计，现在过了 90 岁，依然坚持在一线。还有“铁姑娘”李依依，冶金系，在金属研究所，培养出一大批钢铁工业和稀有金属工业的人才。</p>
+          <p>以我为例，魏先生是我的恩师。我 57 年 9 月到物化系学习，1960 年当助教，1987 年当副主任，1991 年破格当教授。魏先生让我做他的博士生副导师，作为副导师指导了两个学生；1993 年在魏先生推荐下，国务院批准我为第四批博士导师。</p>
+          <p>钢院有一个很大的特点——师承，青出于蓝胜于蓝。魏先生是第一代，下面有周国治院士（已去世）、原上海市市长徐匡迪等优秀老师。我是魏先生的学生，我指导的博士生邢献然，现在是学校固体化学研究所所长，硬件水平完全超过欧美实验室。邢老师的博士生陈骏，是“杰出青年”，现在是海南大学副校长；陈骏的博士生现在是教授，今年也评上了杰青。从魏先生到陈骏的学生，就是钢院的传统——师承，在老师的教导下，学生青出于蓝胜于蓝。</p>
+        </div>
+        <div class="card__sign">
+          <span class="name">乔芝郁</span>
+          <span class="role">受访人 · 口述</span>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__head">
+          <div class="card__code"><b>Q-03</b> · 口述访谈</div>
+          <div class="stamp stamp--sm">口述</div>
+        </div>
+        <h3 class="card__q"><span class="asker">问 · 队员</span>习近平总书记回信提出“坚持特色，争创一流”，从建校专门服务钢铁工业，到如今向多学科高校转型，您觉得学校最应该坚守的传统是什么？</h3>
+        <div class="card__a">
+          <p>首先第一条还是要有爱国情怀，报效国家，要有为国争光的精神，这是最主要的。另外要根据国家的需要来选题。还要甘做人梯——不是每个人都能出名，院士下面有好多人，一个团队好多人都是无名英雄，要有团队精神，只靠个人取得成绩是很困难的。</p>
+          <p>再有就是要创新。现在硬件、软件设施都不错，但创新的氛围还需要进一步加强。年轻学生不能太看不起自己，要有自己的思维、自己的想法，有创新精神以后才能有创新产生。我们跟奥地利维也纳大学有长期合作，80 年代以后我每年要呆一两个月，先后派了七个学生去做博士。现在邢老师的实验室完全不亚于他们，所以在这么好的条件下，大家怎么拧成一股劲，很重要。</p>
+          <p>建议认真读读魏先生的书，怎么做人、怎么奋斗。魏先生一开始在国外念博士是搞纺织，后来因为中国需要钢铁工业，就转去搞钢铁。《冶金物理化学》《冶金热力学》都是世界一流的。日本科学院院士说“魏寿昆，您是中国人民的宝贝，您也是日本人民的宝贝”；日本东北大学教授说“魏寿昆先生作为科学家应该打满分”。</p>
+          <p>我这一辈子最欣慰的是两件事：一个是我有两个非常好的老师——魏寿昆，还有一位瑞典皇家科学院的教授，这两位先生给我引了路。魏先生去世时是 107 岁，我每年给他寄一张贺年卡，他总要给我回一张。这本《熔盐化学与电化学》专著得过冶金部的优秀科技图书奖，我肯定会送给学校一本。</p>
+        </div>
+        <div class="card__sign">
+          <span class="name">乔芝郁</span>
+          <span class="role">受访人 · 口述</span>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <footer class="footer reveal">
+    <div class="card">
+      <div class="footer__title">采编档案 · EDITORIAL NOTE</div>
+      <p>本文档为“理苑拾光小队”采访乔芝郁老师的口述整理。乔老师从留苏预备部转入钢院，是金属物理化学专业首届学生，师承魏寿昆院士，长期从事熔盐电解制取稀土金属研究，并以“师承”为线传承一代代钢院学人。</p>
+      <div class="crew">采访：校史溯源实践团成员　·　资料来源：乔芝郁专访</div>
+    </div>
+  </footer>
+
+</div>
+
+<script>
+  (function(){
+    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var els = document.querySelectorAll('.reveal');
+    if(reduce || !('IntersectionObserver' in window)){
+      els.forEach(function(el){ el.classList.add('is-in'); });
+      return;
+    }
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if(e.isIntersecting){ e.target.classList.add('is-in'); io.unobserve(e.target); }
+      });
+    }, { threshold:0.12 });
+    els.forEach(function(el){ io.observe(el); });
+  })();
+</script>
+</body>
+</html>

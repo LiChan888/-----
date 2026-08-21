@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>高征铠 · 口述校史档案</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=IBM+Plex+Mono:wght@400;500&family=Ma+Shan+Zheng&family=Noto+Serif+SC:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/common.css" />
+<style>
+  .hero{ padding:56px 0 20px; }
+  .hero .card{ padding:40px 36px 30px; }
+  .hero__top{ display:flex; justify-content:space-between; align-items:flex-start; gap:16px; }
+  .hero__meta{
+    font-family:var(--font-mono);
+    font-size:11px;
+    letter-spacing:.18em;
+    color:var(--blueblack);
+    text-transform:uppercase;
+    line-height:2;
+  }
+  .hero__meta .shelf{ display:block; font-size:10px; color:rgba(32,43,62,.5); }
+  .hero__name{
+    font-family:var(--font-display);
+    font-weight:900;
+    font-size:72px;
+    line-height:1.05;
+    letter-spacing:.06em;
+    margin:30px 0 6px;
+  }
+  .hero__role{
+    font-size:17px;
+    color:var(--blueblack);
+    letter-spacing:.04em;
+    padding-bottom:22px;
+    border-bottom:1px solid rgba(32,43,62,.2);
+  }
+  .hero__role .mono{ font-family:var(--font-mono); font-size:14px; }
+  .hero__quote{
+    margin-top:22px;
+    font-size:16px;
+    line-height:2;
+    color:var(--ink);
+    padding-left:18px;
+    border-left:3px solid var(--stamp);
+    font-style:normal;
+  }
+  .hero__quote .who{
+    display:block;
+    margin-top:10px;
+    font-family:var(--font-sign);
+    font-size:22px;
+    color:var(--blueblack);
+    letter-spacing:.1em;
+  }
+
+  .crumb{
+    padding:20px 0 0;
+    font-family:var(--font-mono);
+    font-size:12px;
+    letter-spacing:.1em;
+    color:rgba(32,43,62,.6);
+  }
+  .crumb a{ color:var(--blueblack); }
+  .crumb a:hover{ color:var(--stamp); }
+
+  .photos{ padding:64px 0 8px; }
+  .photos__grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:22px; }
+  .photo{
+    background:#FBF9F2;
+    padding:9px 9px 0;
+    box-shadow:0 1px 2px rgba(32,43,62,.12), 0 8px 20px -10px rgba(32,43,62,.4);
+  }
+  .photo:nth-child(1){ transform:rotate(-1.6deg); }
+  .photo:nth-child(2){ transform:rotate(1.2deg); }
+  .photo:nth-child(3){ transform:rotate(-.6deg); }
+  .photo img{ display:block; width:100%; height:auto; filter:sepia(.1) contrast(1.02) saturate(.94); }
+  .photo figcaption{
+    display:flex; align-items:center; justify-content:space-between; gap:8px;
+    padding:8px 2px 6px;
+  }
+  .photo figcaption .cap{ font-family:var(--font-sign); font-size:16px; color:var(--blueblack); }
+  .photo figcaption .no{ font-family:var(--font-mono); font-size:10px; letter-spacing:.1em; color:rgba(32,43,62,.5); }
+
+  @media (max-width:640px){
+    .hero__name{ font-size:54px; }
+  }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav__inner">
+    <a class="nav__brand" href="index.html">
+      <span class="badge-logo"><img src="assets/team/badge.jpg" alt="满井溯源·理苑拾光 队徽" /></span>
+      <span class="nav__name">满井溯源·理苑拾光<small>Oral History Archive</small></span>
+    </a>
+    <div class="nav__links">
+      <a class="nav__link" href="index.html#about">关于我们</a>
+      <div class="nav__dropdown">
+        <a class="nav__link is-active" href="index.html#pillars">钢铁脊梁<span class="nav__caret">▾</span></a>
+        <div class="nav__menu" role="menu">
+          <a class="nav__menu-item" href="qinbenyi.html">秦本一</a>
+          <a class="nav__menu-item" href="chenli.html">陈力</a>
+          <a class="nav__menu-item" href="wangzhongyi.html">王忠忆</a>
+          <a class="nav__menu-item" href="hanjuyuan.html">韩菊元</a>
+          <a class="nav__menu-item" href="gaozhengkai.html">高征铠</a>
+          <a class="nav__menu-item" href="zhaochengping.html">赵承平</a>
+          <a class="nav__menu-item" href="gongmingying.html">龚明英</a>
+          <a class="nav__menu-item" href="qiaozhiyu.html">乔芝郁</a>
+          <a class="nav__menu-item" href="gongyueyun.html">宫月云</a>
+          <a class="nav__menu-item" href="chennanxian.html">陈难先</a>
+          <a class="nav__menu-item" href="lifushen.html">李福燊</a>
+          <a class="nav__menu-item" href="zuoyonglin.html">左永林</a>
+          <a class="nav__menu-item" href="lushouli.html">鹿守理</a>
+          <a class="nav__menu-item" href="shixizheng.html">史希正</a>
+        </div>
+      </div>
+      <a class="nav__link" href="index.html#contact">联系我们</a>
+    </div>
+  </div>
+</nav>
+
+<div class="wrap">
+
+  <div class="crumb"><a href="index.html">首页</a> / <a href="index.html#pillars">钢铁脊梁</a> / 高征铠</div>
+
+  <header class="hero">
+    <div class="card">
+      <div class="hero__top">
+        <div class="hero__meta">
+          理苑拾光小队 · 口述校史档案
+          <span class="shelf">INTERVIEW ARCHIVE</span>
+        </div>
+        <div class="stamp stamp--lg">口述实录</div>
+      </div>
+      <h1 class="hero__name">高征铠</h1>
+      <p class="hero__role">
+        <span class="mono">USTB-1967</span>　北京钢铁学院 1967 届 · 冶金 · 炼铁 · 高炉可视化 · 教授
+      </p>
+      <blockquote class="hero__quote">
+        我们国家就是世界第一，我特别自豪。
+        <span class="who">—— 高征铠</span>
+      </blockquote>
+    </div>
+  </header>
+
+   <section class="photos reveal">
+    <div class="section-head">
+      <div class="eyebrow">Photos</div>
+      <h2><span class="en">ARCHIVE PHOTOS</span>档案照片</h2>
+    </div>
+    <div class="photos__grid">
+      <figure class="photo">
+        <img src="assets/photos/gaozhengkai-1.jpg" alt="采访高征铠教授 · 现场之一" loading="lazy" />
+        <figcaption><span class="cap">采访现场</span><span class="no">PH-01</span></figcaption>
+      </figure>
+      <figure class="photo">
+        <img src="assets/photos/gaozhengkai-2.jpg" alt="采访高征铠教授 · 现场之二" loading="lazy" />
+        <figcaption><span class="cap">采访现场</span><span class="no">PH-02</span></figcaption>
+      </figure>
+      <figure class="photo">
+        <img src="assets/photos/gaozhengkai-3.jpg" alt="采访高征铠教授 · 现场之三" loading="lazy" />
+        <figcaption><span class="cap">采访现场</span><span class="no">PH-03</span></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="dossier reveal">
+    <div class="section-head">
+      <div class="eyebrow">Dossier</div>
+      <h2><span class="en">PERSONNEL FILE</span>人物档案</h2>
+    </div>
+    <div class="card">
+      <div class="dossier__row">
+        <div class="dossier__label">求学</div>
+        <div class="dossier__value">1962 年入北京钢铁学院冶金专业，1967 年毕业，在校任班长。</div>
+      </div>
+      <div class="dossier__row">
+        <div class="dossier__label">师承</div>
+        <div class="dossier__value">师从著名冶金学家杨永宜教授（与杨天钧校长同门），又得采矿系任允夫教授指点矿业知识、开阔眼界。</div>
+      </div>
+      <div class="dossier__row">
+        <div class="dossier__label">专业履历</div>
+        <div class="dossier__value">毕业后分配宣化钢铁公司，接触 13 立方米小高炉；1978 年考取母校研究生，后分配钢铁研究总院并赴加拿大访问；1994 年回母校任教，任炼铁研究室主任、教授。</div>
+      </div>
+      <div class="dossier__row">
+        <div class="dossier__label">学术</div>
+        <div class="dossier__value">深耕高炉可视化（炉内检测）技术二十余年，<em>世界最早提出“打开高炉黑盒子”</em>，将炉内工况与冶炼技术指标对照起来。</div>
+      </div>
+      <div class="dossier__row">
+        <div class="dossier__label">校友身份</div>
+        <div class="dossier__value">燕园校友会首任秘书长。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="timeline reveal">
+    <div class="section-head">
+      <div class="eyebrow">Chronology</div>
+      <h2><span class="en">TIMELINE</span>年谱</h2>
+    </div>
+    <ul class="timeline__list">
+      <li class="timeline__item is-key">
+        <div class="timeline__year">1962</div>
+        <div class="timeline__text">入北京钢铁学院冶金专业，在校任班长。</div>
+      </li>
+      <li class="timeline__item">
+        <div class="timeline__year">1967</div>
+        <div class="timeline__text">毕业，分配宣化钢铁公司，接触 13 立方米小型高炉。</div>
+      </li>
+      <li class="timeline__item is-key">
+        <div class="timeline__year">1978</div>
+        <div class="timeline__text">考取钢铁学院研究生，后分配钢铁研究总院。</div>
+      </li>
+      <li class="timeline__item">
+        <div class="timeline__year">访学</div>
+        <div class="timeline__text">受派赴加拿大访问一年，学成回国。</div>
+      </li>
+      <li class="timeline__item is-key">
+        <div class="timeline__year">1994</div>
+        <div class="timeline__text">回母校任教，任炼铁研究室主任、教授。</div>
+      </li>
+      <li class="timeline__item">
+        <div class="timeline__year">2000 年代</div>
+        <div class="timeline__text">促成沙钢建成 5800 立方米世界最大高炉。</div>
+      </li>
+      <li class="timeline__item is-key">
+        <div class="timeline__year">至今</div>
+        <div class="timeline__text">高炉可视化技术推广至美、加、俄、欧多国，任燕园校友会首任秘书长。</div>
+      </li>
+    </ul>
+  </section>
+
+  <section class="qa reveal">
+    <div class="section-head">
+      <div class="eyebrow">Oral History</div>
+      <h2><span class="en">QUESTION &amp; ANSWER</span>口述问答</h2>
+    </div>
+
+    <div class="qa__list">
+
+      <article class="card">
+        <div class="card__head">
+          <div class="card__code"><b>Q-01</b> · 口述访谈</div>
+          <div class="stamp stamp--sm">口述</div>
+        </div>
+        <h3 class="card__q"><span class="asker">问 · 队员</span>关于校训“求实鼎新”，您觉得是如何在建校初期的教师或学生身上体现的？</h3>
+        <div class="card__a">
+          <p>一入学，钢铁学院在八大学院里就是最有名的，当时严格按照分数录取，我们考上钢院心满意足。当时无论大跃进还是大炼钢铁，我们都参加了，觉得钢铁是国家的工业粮食，一个国家要强盛，必须在钢铁上有很好的基础，献身祖国钢铁工业很值得，到学校就努力学习。</p>
+          <p>我和杨校长的导师都是杨永宜，他是非常有名的冶金学教授，在人品、学习、知识上都给我们很好的教育。当时就觉得要继承老师的优秀品质，还有老师献身钢铁工业的情怀，尽最大努力为国争光。杨天钧去德国留学，我去加拿大，我们把国外先进的东西学回来，在国内提高钢铁工业的科技水平。</p>
+          <p>我们也有比较新的想法和发明。我的高炉可视化技术是当时世界上最早提出的，就是要看见高炉里头的冶炼状况。过去大家根据冶炼结果、产量、质量来猜里面的情况，我们要打开黑盒子，把炉内工况和最后的冶炼技术指标对照起来，提高高炉生产率、改进生铁质量就有了保障。这方面国家也很扶持，从现在整个钢铁工业的高炉冶炼来说，我国在最前面，国外在学习我们，我们的指标也是最好的。</p>
+        </div>
+        <div class="card__sign">
+          <span class="name">高征铠</span>
+          <span class="role">受访人 · 口述</span>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__head">
+          <div class="card__code"><b>Q-02</b> · 口述访谈</div>
+          <div class="stamp stamp--sm">口述</div>
+        </div>
+        <h3 class="card__q"><span class="asker">问 · 队员</span>60 年代初期学校实行以任务带教学、真刀真枪做毕业设计的模式，对您当时的学习有什么影响？</h3>
+        <div class="card__a">
+          <p>过去学习都按书本，钻研书上写的讲的，把它记住，用它去思考下一步。但到工厂以后，才知道到底钢铁是怎么炼出来的，每一个步骤原料怎么样、冶炼操作怎么要求，每一条都和原来的书本知识有一定不同。不掌握每一个高炉的冶炼特点、每一种原料的性能，用泛泛的知识做生产和技术是达不到要求的。国家让学生到生产实践中锻炼、提高，是最好的办法。</p>
+          <p>那会儿虽然年轻，但中科院的实验高炉让我们参加试验，国家新建的高炉让我们参加生产实践、调试。总的来说，是国家的政策和当时院长高芸生“真刀真枪”让学生去现场实验，这是当时国内最好的方法，我们也受益于此。现在我们做的所有工作、在钢铁工业的成绩，都离不开党的教育方针、高芸生老师的培养。</p>
+        </div>
+        <div class="card__sign">
+          <span class="name">高征铠</span>
+          <span class="role">受访人 · 口述</span>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__head">
+          <div class="card__code"><b>Q-03</b> · 口述访谈</div>
+          <div class="stamp stamp--sm">口述</div>
+        </div>
+        <h3 class="card__q"><span class="asker">问 · 队员</span>您从 13 立方米小高炉做起，后来促成世界最大高炉的建成，这段经历是怎样的？</h3>
+        <div class="card__a">
+          <p>一开始大学毕业分配到宣化钢铁公司，接触的是 13 立方米的小型高炉，那是当时最小的高炉。那时候国家发展钢铁工业，科学院建了实验高炉，我在那个高炉上也学习过一段时间。工作以后，我又到全国各个钢铁公司，给他们讲解炼铁技术。</p>
+          <p>沙钢的老板沈文荣是当时国家最大的民营企业家。我给他们讲课、帮他们提升生产效率，他对我十分认可。后来我说沙钢有能力将炼铁达到世界水平，就要建世界最大的高炉，于是建成了 5800 立方米高炉，当时国外最大高炉也就 6000 立方米。因为民营企业只要老板一点头，所有人都围着老板转，这座世界级高炉很快建成，我们开发的新技术也落地应用到高炉上。那些国外专家看到之后眼睛一亮，没想到中国能有这么好的炼铁技术，还能把炼铁高炉内的冶炼过程看得清清楚楚。这个技术很快就推广了，美国、加拿大、俄罗斯、欧洲一些国家都采用了。</p>
+        </div>
+        <div class="card__sign">
+          <span class="name">高征铠</span>
+          <span class="role">受访人 · 口述</span>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__head">
+          <div class="card__code"><b>Q-04</b> · 口述访谈</div>
+          <div class="stamp stamp--sm">口述</div>
+        </div>
+        <h3 class="card__q"><span class="asker">问 · 队员</span>您花 20 年时间做高炉可视化技术、投入很多金钱反复试错，这体现了怎样的钢铁精神内涵？</h3>
+        <div class="card__a">
+          <p>上学以后在工厂劳动过，也去农村四清。我们认识到中国和世界比，当时很靠后、很艰苦，但国家既然培养我们，老师杨永宜、校长高芸生又给我们这么多励志教育，一定要通过努力改变国家面貌，从落后变先进。所以学习时各科都很认真，打好基础；毕业以后也不是混日子，把工作和生产中需要改变的地方，尽自己努力去改变、革新、搞发明创造。</p>
+          <p>派我去国外学习时，我更认真分析世界钢铁工业发展方向、我们的优点和他们的长处，只有知己知彼才能有最好的前途。从现在来看，我们的钢铁工业就是世界领先的。</p>
+        </div>
+        <div class="card__sign">
+          <span class="name">高征铠</span>
+          <span class="role">受访人 · 口述</span>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__head">
+          <div class="card__code"><b>Q-05</b> · 口述访谈</div>
+          <div class="stamp stamp--sm">口述</div>
+        </div>
+        <h3 class="card__q"><span class="asker">问 · 队员</span>新技术从学校的角度推广比较困难，您后来为什么选择办公司？</h3>
+        <div class="card__a">
+          <p>有些新技术的推广从学校的角度比较困难，我们就办了一个公司，以实现高炉可视化为目标，到现在公司运营得还是不错的，有些技术问题我们还要给他们提建议和方向指引。</p>
+          <p>这方面赵老师比我开明，我钻到技术里了，后来她说要成立一个公司，这样我才能够有机会。我这个特点是老想写文章、发表文章，在《钢铁》杂志和其他科技期刊上发表，是学术型的。赵老师提了好多次：学术得变成生产力，这样才能体现出价值，对国家和其他都有好处。我们两个各有所长。国家把我们培养了，我们要把知识变成生产力，给国家的钢铁工业增砖添瓦。</p>
+        </div>
+        <div class="card__sign">
+          <span class="name">高征铠</span>
+          <span class="role">受访人 · 口述</span>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__head">
+          <div class="card__code"><b>Q-06</b> · 口述访谈</div>
+          <div class="stamp stamp--sm">口述</div>
+        </div>
+        <h3 class="card__q"><span class="asker">问 · 队员</span>对北科大学子，您有什么寄语？</h3>
+        <div class="card__a">
+          <p>钢铁学院一定要把理论和实践结合起来。学的这些东西都是老师们和国家指出的方向，要实现还得靠学子们。抓紧每一个机会、找到每一个机遇，把人生价值和国家的需要结合起来，光空想没用。</p>
+          <p>我们觉得很幸福：国家不断发展，老师把知识、能力和为人处事的人生哲学都传给我们了，一定要在老师的基础上进一步把中国的事情办好。钢铁就是世界第一，现在跟国外的人交流，就觉得 number one 就是中国。你们一定要把中国的钢铁工业继续往前推进，对将来进一步好好学习、多做贡献，也是很有意义的。</p>
+        </div>
+        <div class="card__sign">
+          <span class="name">高征铠</span>
+          <span class="role">受访人 · 口述</span>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <footer class="footer reveal">
+    <div class="card">
+      <div class="footer__title">采编档案 · EDITORIAL NOTE</div>
+      <p>本文档为“满井溯源·理苑拾光小队”采访高征铠、赵承平两位老师（同窗搭档、同心相伴六十余年）的口述整理，聚焦高征铠老师部分。高老师深耕高炉可视化技术二十余年，世界最早提出“打开高炉黑盒子”，从 13 立方米小高炉到沙钢 5800 立方米世界最大高炉，技术推广至美、加、俄、欧多国。</p>
+      <div class="crew">采访：满井溯源实践团成员　·　资料来源：高征铠、赵承平老师采访稿</div>
+    </div>
+  </footer>
+
+</div>
+
+<script>
+  (function(){
+    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var els = document.querySelectorAll('.reveal');
+    if(reduce || !('IntersectionObserver' in window)){
+      els.forEach(function(el){ el.classList.add('is-in'); });
+      return;
+    }
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if(e.isIntersecting){ e.target.classList.add('is-in'); io.unobserve(e.target); }
+      });
+    }, { threshold:0.12 });
+    els.forEach(function(el){ io.observe(el); });
+  })();
+</script>
+</body>
+</html>

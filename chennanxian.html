@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>陈难先 · 口述校史档案</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=IBM+Plex+Mono:wght@400;500&family=Ma+Shan+Zheng&family=Noto+Serif+SC:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/common.css" />
+<style>
+  .hero{ padding:56px 0 20px; }
+  .hero .card{ padding:40px 36px 30px; }
+  .hero__top{ display:flex; justify-content:space-between; align-items:flex-start; gap:16px; }
+  .hero__row{ display:flex; align-items:center; gap:20px; }
+  .hero__avatar{
+    flex:0 0 auto;
+    width:96px; height:96px;
+    border-radius:50%;
+    overflow:hidden;
+    border:2px solid var(--blueblack);
+    box-shadow:inset 0 0 0 3px var(--cardface);
+  }
+  .hero__avatar img{ width:100%; height:100%; object-fit:cover; display:block; }
+  .hero__meta{
+    font-family:var(--font-mono); font-size:12px;
+    letter-spacing:.18em; color:var(--blueblack);
+    text-transform:uppercase; line-height:2;
+  }
+  .hero__meta .shelf{ display:block; font-size:12px; color:rgba(32,43,62,.5); }
+  .hero__name{
+    font-family:var(--font-display); font-weight:900;
+    font-size:58px; line-height:1.08; letter-spacing:.06em;
+    margin:26px 0 6px;
+  }
+  .hero__role{
+    font-size:17px; color:var(--blueblack); letter-spacing:.04em;
+    padding-bottom:22px; border-bottom:1px solid rgba(32,43,62,.2);
+  }
+  .hero__role .mono{ font-family:var(--font-mono); font-size:14px; }
+  .hero__quote{
+    margin-top:22px; font-size:17px; line-height:2; color:var(--ink);
+    padding-left:18px; border-left:3px solid var(--stamp); font-style:normal;
+  }
+  .hero__quote .who{
+    display:block; margin-top:10px; font-family:var(--font-sign);
+    font-size:22px; color:var(--blueblack); letter-spacing:.1em;
+  }
+  .hero__foot{ margin-top:22px; }
+
+  .crumb{
+    padding:20px 0 0; font-family:var(--font-mono); font-size:13px;
+    letter-spacing:.1em; color:rgba(32,43,62,.6);
+  }
+  .crumb a{ color:var(--blueblack); }
+  .crumb a:hover{ color:var(--stamp); }
+
+  /* 座谈会发言原话 */
+  .speech{ padding:64px 0 8px; }
+  .speech .card{ padding:30px 32px 26px; }
+  .speech__scene{
+    font-family:var(--font-mono); font-size:13px; letter-spacing:.12em;
+    color:var(--stamp); text-transform:uppercase;
+    padding-bottom:12px; border-bottom:1px dashed rgba(32,43,62,.22);
+    margin-bottom:22px;
+  }
+  .speech__body p{
+    font-size:17px; line-height:2.1; margin-bottom:18px; text-align:justify;
+    color:var(--ink);
+  }
+  .speech__body p:last-child{ margin-bottom:0; }
+  .speech__body .quote{
+    border-left:3px solid var(--stamp); padding-left:14px; font-weight:500;
+    color:var(--blueblack);
+  }
+  .speech__sign{
+    display:flex; align-items:flex-end; justify-content:space-between; gap:14px;
+    margin-top:22px; padding-top:14px; border-top:1px dashed rgba(32,43,62,.16);
+  }
+  .speech__sign .name{
+    font-family:var(--font-sign); font-size:26px; color:var(--blueblack);
+    letter-spacing:.12em; transform:rotate(-2deg); transform-origin:left bottom;
+  }
+  .speech__sign .role{
+    font-family:var(--font-mono); font-size:12px; letter-spacing:.14em;
+    color:rgba(32,43,62,.45); text-align:right; line-height:1.7;
+  }
+
+  @media (max-width:560px){
+    .hero__name{ font-size:44px; }
+    .hero__row{ gap:14px; }
+    .hero__avatar{ width:72px; height:72px; }
+  }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav__inner">
+    <a class="nav__brand" href="index.html">
+      <span class="badge-logo"><img src="assets/team/badge.jpg" alt="满井溯源·理苑拾光 队徽" /></span>
+      <span class="nav__name">满井溯源·理苑拾光<small>Oral History Archive</small></span>
+    </a>
+    <div class="nav__links">
+      <a class="nav__link" href="index.html#about">关于我们</a>
+      <div class="nav__dropdown">
+        <a class="nav__link is-active" href="index.html#pillars">钢铁脊梁<span class="nav__caret">▾</span></a>
+        <div class="nav__menu" role="menu">
+          <a class="nav__menu-item" href="qinbenyi.html">秦本一</a>
+          <a class="nav__menu-item" href="chenli.html">陈力</a>
+          <a class="nav__menu-item" href="wangzhongyi.html">王忠忆</a>
+          <a class="nav__menu-item" href="hanjuyuan.html">韩菊元</a>
+          <a class="nav__menu-item" href="gaozhengkai.html">高征铠</a>
+          <a class="nav__menu-item" href="zhaochengping.html">赵承平</a>
+          <a class="nav__menu-item" href="gongmingying.html">龚明英</a>
+          <a class="nav__menu-item" href="qiaozhiyu.html">乔芝郁</a>
+          <a class="nav__menu-item" href="gongyueyun.html">宫月云</a>
+          <a class="nav__menu-item" href="chennanxian.html">陈难先</a>
+          <a class="nav__menu-item" href="lifushen.html">李福燊</a>
+          <a class="nav__menu-item" href="zuoyonglin.html">左永林</a>
+          <a class="nav__menu-item" href="lushouli.html">鹿守理</a>
+          <a class="nav__menu-item" href="shixizheng.html">史希正</a>
+        </div>
+      </div>
+      <a class="nav__link" href="index.html#contact">联系我们</a>
+    </div>
+  </div>
+</nav>
+
+<div class="wrap">
+
+  <div class="crumb"><a href="index.html">首页</a> / <a href="index.html#pillars">钢铁脊梁</a> / 陈难先</div>
+
+  <header class="hero">
+    <div class="card">
+      <div class="hero__top">
+        <div class="hero__row">
+          <span class="hero__avatar"><img src="assets/team/chennanxian.jpg" alt="陈难先" /></span>
+          <div class="hero__meta">
+            理苑拾光小队 · 口述校史档案
+            <span class="shelf">INTERVIEW ARCHIVE · 校史溯源座谈会</span>
+          </div>
+        </div>
+        <div class="stamp stamp--lg">口述实录</div>
+      </div>
+
+      <h1 class="hero__name">陈难先</h1>
+      <p class="hero__role"><span class="mono">ACADEMICIAN</span>　中国科学院院士 · 曾任北科大副校长</p>
+
+      <blockquote class="hero__quote">
+        钢铁学院是重工业部办的学校，天生就是为了和国家经济建设发展联系起来的。
+        <span class="who">—— 陈难先</span>
+      </blockquote>
+
+      <div class="stamps-row hero__foot">
+        <span>校史溯源</span><span>校史溯源</span><span>校史溯源</span><span>校史溯源</span><span>校史溯源</span>
+      </div>
+    </div>
+  </header>
+
+  <section class="dossier reveal">
+    <div class="section-head">
+      <div class="eyebrow">Dossier</div>
+      <h2><span class="en">PERSONNEL FILE</span>人物档案</h2>
+    </div>
+    <div class="card">
+            <div class="dossier__row">
+        <div class="dossier__label">身份</div>
+        <div class="dossier__value">中国科学院院士，北京科技大学、清华大学教授、博士生导师。</div>
+      </div>
+      <div class="dossier__row">
+        <div class="dossier__label">求学</div>
+        <div class="dossier__value">1962 年北京大学物理系毕业，分配至北京钢铁学院。</div>
+      </div>
+      <div class="dossier__row">
+        <div class="dossier__label">任教</div>
+        <div class="dossier__value">在理化系物理教研室深耕物理教学，讲授量子力学，深受学生欢迎。</div>
+      </div>
+      <div class="dossier__row">
+        <div class="dossier__label">留学</div>
+        <div class="dossier__value">1980 年代赴美国宾夕法尼亚大学攻读博士学位，毕业后回国继续任教。</div>
+      </div>
+      <div class="dossier__row">
+        <div class="dossier__label">履历</div>
+        <div class="dossier__value">曾任北京科技大学副校长、北京市人大常委会副主任。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="speech reveal">
+    <div class="section-head">
+      <div class="eyebrow">Oral Statement</div>
+      <h2><span class="en">TRANSCRIPT</span>座谈会发言</h2>
+    </div>
+    <div class="card">
+      <div class="speech__scene">校史溯源工作启动座谈会 · 燕园养老社区 · 现场发言实录</div>
+      <div class="speech__body">
+                <p>我是 1962 年分配到当时叫北京钢铁学院，这个能够上北钢那时候还是觉得非常荣幸，一个因为这个钢铁学院和其他的这个大学不一样。我们中国很多大学都是教育部或者是地方政府直隶的，是吧？钢铁学院是我们国家当时重工业部办的学校，后来是冶金部办的学校。</p>
+        <p>那一九五二年是什么年代？朝鲜战争是吧，结束了。所以那时候我们就清楚，重工业的重要。所以当时重工业部专门有一个钢铁师，后来叫钢铁局，知道吧？创办钢铁学院的策划人叫刘斌，刘斌是钢铁学院的整个筹办的策划人。所以他能够找到这么多行业的支持，就是说钢铁学院不仅仅有非常有名的教授，而且有大量的，从采矿，到冶炼，到加工，材料这样的人才，而且不但有教授，还有很多专家。因为是有这个重工业部支持，当时的重工业部的部长是谁呢？是陈云。</p>
+        <p>我们这个院长啊，先来的是那个高芸生和魏景昌。两个人都是华中钢铁公司的，一个是总经理，一个是副总经理，一个是党组书记，一个是副书记。所以钢院很特别，他是派了一个这个华中钢铁公司的副总经理，就魏锦昌，到北京来作为筹办的这个实际负责人。而且因为他是重工业部，所以他可以调集全国最好的教授。</p>
+        <p>现在的学校很重要的一个问题就是怎么样和国家经济建设的发展联系起来。那这钢铁学院天生的就是有这个目的的。但是大家可能不知道，现在的学校很重要的问题，就是怎么样和国家经济建设的发展联系起来。那这钢铁学院天生的就是有这个目的的。但是这个目的是很不容易。</p>
+        <p>所以你现在别的学校，你找一些教授之外，你要真是对这个国家的这个底很摸得很清的，就钢铁学院，是这么样的一个学校。那时候大概教授数量是这样，比方说你清华如果说有 30 个正教授是吧？北科大那时候就十几个，但是连副教授的队伍加起来有文革以前就有 30 多个，所以他是在八大学院里头这个这个队伍是最强的。</p>
+        <p>所以我觉得我在钢铁学院工作，也得到了锻炼，也有机会那个给国家争气，做一些事情，但我觉得我还是要很好的学习钢铁学院的历史。</p>
+      </div>
+      <div class="speech__sign">
+        <span class="name">陈难先</span>
+        <span class="role">发言实录 · 未经删改</span>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer reveal">
+    <div class="card">
+      <div class="footer__title">采编档案 · EDITORIAL NOTE</div>
+      <p>本文档为“校史溯源”社会实践团于燕园养老社区召开的校史溯源工作启动座谈会现场发言实录，由理苑拾光小队整理。</p>
+      <div class="crew">座谈时间：2026.7.25 座谈地点：燕园养老社区</div>
+    </div>
+  </footer>
+
+</div>
+
+<script>
+  (function(){
+    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var els = document.querySelectorAll('.reveal');
+    if(reduce || !('IntersectionObserver' in window)){
+      els.forEach(function(el){ el.classList.add('is-in'); });
+      return;
+    }
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if(e.isIntersecting){ e.target.classList.add('is-in'); io.unobserve(e.target); }
+      });
+    }, { threshold:0.12 });
+    els.forEach(function(el){ io.observe(el); });
+  })();
+</script>
+</body>
+</html>

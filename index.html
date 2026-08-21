@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>满井溯源·理苑拾光 —— 口述校史档案</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=IBM+Plex+Mono:wght@400;500&family=Ma+Shan+Zheng&family=Noto+Serif+SC:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/common.css" />
+<style>
+  /* ===== 首页 hero ===== */
+  .hero{ padding:64px 0 28px; }
+  .hero .card{ padding:52px 40px 40px; text-align:center; }
+  .hero__meta{
+    font-family:var(--font-mono);
+    font-size:13px;
+    letter-spacing:.3em;
+    color:var(--blueblack);
+    text-transform:uppercase;
+  }
+  .hero__title{
+    font-family:var(--font-display);
+    font-weight:900;
+    font-size:58px;
+    line-height:1.12;
+    letter-spacing:.06em;
+    margin:26px 0 12px;
+  }
+  .hero__sub{
+    font-size:18px;
+    color:var(--blueblack);
+    letter-spacing:.06em;
+  }
+  .hero__divider{
+    width:120px;
+    margin:26px auto;
+    display:flex;
+    align-items:center;
+    gap:8px;
+    color:var(--stamp);
+  }
+  .hero__divider::before,
+  .hero__divider::after{
+    content:"";
+    flex:1;
+    height:1px;
+    background:rgba(180,58,47,.4);
+  }
+  .hero__divider .dot{
+    width:7px; height:7px;
+    border-radius:50%;
+    background:var(--stamp);
+  }
+  .hero__lead{
+    max-width:560px;
+    margin:0 auto;
+    font-size:17px;
+    line-height:2;
+    color:rgba(32,43,62,.9);
+  }
+  .hero__foot{ margin-top:28px; }
+
+  /* ===== 分区通用 ===== */
+  .section{ padding:72px 0 8px; }
+
+  /* ===== 队徽（导航 + 文章头像） ===== */
+  .badge-logo{
+    flex:0 0 auto;
+    width:46px; height:46px;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 1px 4px rgba(32,43,62,.28);
+  }
+  .badge-logo img{ width:100%; height:100%; object-fit:cover; display:block; }
+  .badge-logo--sm{ width:40px; height:40px; border-radius:8px; }
+
+  /* ===== 关于我们（公众号文章） ===== */
+  .about .article{ padding:8px 28px 4px; }
+  .article__pub{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    padding:18px 0 16px;
+    border-bottom:1px dashed rgba(32,43,62,.2);
+  }
+  .article__pub .pub-name{
+    font-family:var(--font-body);
+    font-weight:700;
+    font-size:17px;
+    color:var(--ink);
+  }
+  .article__pub .pub-sub{
+    font-family:var(--font-mono);
+    font-size:12px;
+    letter-spacing:.12em;
+    color:rgba(32,43,62,.5);
+  }
+  .article__pub .follow{
+    margin-left:auto;
+    font-family:var(--font-mono);
+    font-size:13px;
+    letter-spacing:.1em;
+    color:var(--cardface);
+    background:var(--stamp);
+    padding:7px 16px;
+    border-radius:20px;
+  }
+  .article__body{ padding:28px 0 10px; }
+  .article__title{
+    font-family:var(--font-display);
+    font-weight:700;
+    font-size:26px;
+    line-height:1.5;
+    text-align:center;
+    margin-bottom:6px;
+  }
+  .article__meta{
+    text-align:center;
+    font-family:var(--font-mono);
+    font-size:13px;
+    letter-spacing:.1em;
+    color:rgba(32,43,62,.5);
+    margin-bottom:24px;
+  }
+  .article__body p{
+    font-size:17px;
+    line-height:2.1;
+    margin-bottom:16px;
+    text-align:justify;
+  }
+  .article__body .pull{
+    font-family:var(--font-sign);
+    font-size:24px;
+    color:var(--blueblack);
+    text-align:center;
+    margin:24px 0;
+    letter-spacing:.08em;
+  }
+  .article__foot{
+    text-align:center;
+    padding:16px 0 8px;
+    border-top:1px dashed rgba(32,43,62,.2);
+    font-family:var(--font-mono);
+    font-size:13px;
+    letter-spacing:.08em;
+    color:rgba(32,43,62,.55);
+  }
+
+  /* ===== 钢铁脊梁（8 位教授圆形模块） ===== */
+  .pillars__grid{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap:34px 20px;
+  }
+  .pillar{ text-align:center; }
+  .pillar__avatar{
+    position:relative;
+    width:132px;
+    height:132px;
+    margin:0 auto;
+    border-radius:50%;
+    overflow:hidden;
+    background:var(--cardface-deep);
+    border:2px solid var(--blueblack);
+    box-shadow:inset 0 0 0 3px var(--cardface);
+    display:grid;
+    place-items:center;
+    transition:transform .35s cubic-bezier(.2,.7,.2,1), box-shadow .35s, border-color .35s;
+  }
+  .pillar__avatar img{
+    width:100%; height:100%;
+    object-fit:cover;
+    display:block;
+  }
+  /* hover：圆形放大 + 红环对焦 */
+  .pillar:hover .pillar__avatar{
+    transform:scale(1.1);
+    border-color:var(--stamp);
+    box-shadow:inset 0 0 0 3px var(--cardface), 0 0 0 5px rgba(180,58,47,.18), 0 14px 26px -10px rgba(32,43,62,.5);
+  }
+  .pillar__name{
+    margin-top:14px;
+    font-family:var(--font-body);
+    font-weight:700;
+    font-size:18px;
+    letter-spacing:.06em;
+    color:var(--ink);
+    transition:color .25s;
+  }
+  .pillar__role{
+    margin-top:2px;
+    font-family:var(--font-mono);
+    font-size:12px;
+    letter-spacing:.08em;
+    color:rgba(32,43,62,.5);
+  }
+  .pillar:hover .pillar__name{ color:var(--stamp); }
+
+  /* ===== 联系我们（方形翻转卡） ===== */
+  .contact__grid{
+    display:grid;
+    grid-template-columns:repeat(5, 1fr);
+    gap:24px;
+  }
+  .contact__item{ text-align:center; }
+
+  .flip{
+    width:132px;
+    height:132px;
+    margin:0 auto;
+    perspective:900px;
+    cursor:pointer;
+  }
+  .flip__inner{
+    position:relative;
+    width:100%; height:100%;
+    transform-style:preserve-3d;
+    transition:transform .55s cubic-bezier(.2,.7,.2,1);
+  }
+  .flip:hover .flip__inner,
+  .flip:focus-within .flip__inner{ transform:rotateY(180deg); }
+  .flip__face{
+    position:absolute;
+    inset:0;
+    backface-visibility:hidden;
+    -webkit-backface-visibility:hidden;
+    border-radius:14px;
+    overflow:hidden;
+    display:grid;
+    place-items:center;
+  }
+  .flip__front{
+    background:transparent;
+    box-shadow:0 4px 14px -4px rgba(32,43,62,.45);
+  }
+  .flip__front img{
+    width:100%; height:100%;
+    object-fit:contain;
+    display:block;
+  }
+  .flip__back{
+    transform:rotateY(180deg);
+    background:#fff;
+    border:2px solid rgba(32,43,62,.18);
+  }
+  .flip__back img{
+    width:100%; height:100%;
+    object-fit:contain;
+    padding:8px;
+    display:block;
+  }
+  .flip__back .empty{
+    font-family:var(--font-mono);
+    font-size:13px;
+    color:rgba(32,43,62,.5);
+    letter-spacing:.08em;
+    text-align:center;
+    padding:10px;
+  }
+  .contact__name{
+    margin-top:14px;
+    font-family:var(--font-body);
+    font-size:16px;
+    letter-spacing:.06em;
+    color:var(--ink);
+  }
+  .contact__hint{
+    font-family:var(--font-mono);
+    font-size:12px;
+    letter-spacing:.06em;
+    color:rgba(32,43,62,.45);
+  }
+
+  @media (max-width:760px){
+    .hero__title{ font-size:42px; }
+    .pillars__grid{ grid-template-columns:repeat(2, 1fr); }
+    .contact__grid{ grid-template-columns:repeat(3, 1fr); }
+    .pillar__avatar{ width:112px; height:112px; }
+  }
+  @media (max-width:420px){
+    .hero .card{ padding:36px 22px 30px; }
+    .hero__title{ font-size:34px; }
+    .contact__grid{ grid-template-columns:repeat(2, 1fr); }
+  }
+
+</style>
+</head>
+<body>
+
+<!-- ===== 顶部导航 ===== -->
+<nav class="nav">
+  <div class="nav__inner">
+    <a class="nav__brand" href="index.html">
+      <span class="badge-logo"><img src="assets/team/badge.jpg" alt="满井溯源·理苑拾光 队徽" /></span>
+      <span class="nav__name">满井溯源·理苑拾光<small>Oral History Archive</small></span>
+    </a>
+    <div class="nav__links">
+      <a class="nav__link is-active" href="#about">关于我们</a>
+      <div class="nav__dropdown">
+        <a class="nav__link" href="#pillars">钢铁脊梁<span class="nav__caret">▾</span></a>
+        <div class="nav__menu" role="menu">
+          <a class="nav__menu-item" href="qinbenyi.html">秦本一</a>
+          <a class="nav__menu-item" href="chenli.html">陈力</a>
+          <a class="nav__menu-item" href="wangzhongyi.html">王忠忆</a>
+          <a class="nav__menu-item" href="hanjuyuan.html">韩菊元</a>
+          <a class="nav__menu-item" href="gaozhengkai.html">高征铠</a>
+          <a class="nav__menu-item" href="zhaochengping.html">赵承平</a>
+          <a class="nav__menu-item" href="gongmingying.html">龚明英</a>
+          <a class="nav__menu-item" href="qiaozhiyu.html">乔芝郁</a>
+          <a class="nav__menu-item" href="gongyueyun.html">宫月云</a>
+          <a class="nav__menu-item" href="chennanxian.html">陈难先</a>
+          <a class="nav__menu-item" href="lifushen.html">李福燊</a>
+          <a class="nav__menu-item" href="zuoyonglin.html">左永林</a>
+          <a class="nav__menu-item" href="lushouli.html">鹿守理</a>
+          <a class="nav__menu-item" href="shixizheng.html">史希正</a>
+        </div>
+      </div>
+      <a class="nav__link" href="#contact">联系我们</a>
+    </div>
+  </div>
+</nav>
+
+<div class="wrap wrap--wide">
+
+  <!-- ===== 首页封面 ===== -->
+  <header class="hero">
+    <div class="card">
+      <div class="hero__meta">国家卓越工程师学院 · 暑期社会实践 · 口述校史</div>
+      <h1 class="hero__title">满井溯源·理苑拾光</h1>
+      <p class="hero__sub">八位老教授 · 一段钢铁脊梁的记忆</p>
+      <div class="hero__divider"><span class="dot"></span><span class="stamp stamp--sm">口述实录</span><span class="dot"></span></div>
+      <p class="hero__lead">以口述史的方式，抢救、整理一代钢院人的从教与育人记忆，把散落在岁月里的故事，装订成一册可以翻阅的校史档案。</p>
+      <div class="stamps-row hero__foot">
+        <span> 2026 Oral History </span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== 关于我们 ===== -->
+  <section class="section about reveal" id="about">
+    <div class="section-head">
+      <div class="eyebrow">About Us</div>
+      <h2><span class="en">OUR TEAM</span>关于我们</h2>
+    </div>
+    <div class="card">
+      <div class="article">
+        <div class="article__pub">
+          <span class="badge-logo badge-logo--sm"><img src="assets/team/badge.jpg" alt="队徽" /></span>
+          <span>
+            <span class="pub-name">满井溯源·理苑拾光</span>
+            <span class="pub-sub">PUBLIC ACCOUNT</span>
+          </span>
+          <span class="follow">关注</span>
+        </div>
+        <div class="article__body">
+          <h3 class="article__title">满井溯源，拾光而来 —— 我们是谁</h3>
+          <div class="article__meta">理苑拾光小队 · 2026 年暑期社会实践</div>
+          <p>我们是「满井溯源·理苑拾光」社会实践小队，来自国家卓越工程师学院。这个夏天，我们叩开八位退休老教授的家门，用一支录音笔、一台相机，去记录那些曾经站在讲台上、如今已满头银发的身影。</p>
+          <p>他们当中有冶金机械专业的拓荒者，有坚守讲台数十年的教书先生，有把一辈子交给实验室与车间的工程师。他们是北京钢铁学院的建校一代，亲历了学校从荒原起步、几经迁址的完整岁月，也亲历了一个国家钢铁工业从无到有、由弱到强的历程。</p>
+          <p>我们想做的，不只是一次普通的采访。我们想把这些口述实录，整理成一册可以翻阅、可以听见、可以触摸的校史档案——记录他们如何选择专业、如何留校任教、如何在动荡的年代守住一张书桌，也记录他们今天对青年一代的嘱托。</p>
+          <p class="pull">「塑造一个能够为将来承担更重要工作的人格和魄力，这比考好一门课或养成一种习惯都要好得多。」</p>
+          <p>受访教授们还愿意捐出珍藏多年的教案、纪念册、荣誉证书与班级 T 恤，这些独一无二的一手史料，将进入雄安新校区校史馆，用于展陈与新生校史宣讲。</p>
+        </div>
+        <div class="article__foot">— 满井溯源 · 理苑拾光 · 未完待续 —</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 钢铁脊梁（8 位教授） ===== -->
+  <section class="section pillars reveal" id="pillars">
+    <div class="section-head section-head--center">
+      <div class="eyebrow">Steel Backbone</div>
+      <h2><span class="en">PROFESSORS</span>钢铁脊梁</h2>
+    </div>
+
+    <div class="pillars__grid">
+      <a class="pillar" href="qinbenyi.html">
+        <span class="pillar__avatar"><img src="assets/team/qinbenyi.jpg" alt="秦本一" /></span>
+        <span class="pillar__name">秦本一</span>
+        <span class="pillar__role">冶金机械</span>
+      </a>
+      <a class="pillar" href="chenli.html">
+        <span class="pillar__avatar"><img src="assets/team/chenli.png" alt="陈力" /></span>
+        <span class="pillar__name">陈力</span>
+        <span class="pillar__role">电工基础</span>
+      </a>
+      <a class="pillar" href="wangzhongyi.html">
+        <span class="pillar__avatar"><img src="assets/team/wangzhongyi.jpg" alt="王忠忆" /></span>
+        <span class="pillar__name">王忠忆</span>
+        <span class="pillar__role">粉末冶金</span>
+      </a>
+      <a class="pillar" href="hanjuyuan.html">
+        <span class="pillar__avatar"><img src="assets/team/hanjuyuan.jpg" alt="韩菊元" /></span>
+        <span class="pillar__name">韩菊元</span>
+        <span class="pillar__role">采矿</span>
+      </a>
+      <a class="pillar" href="gaozhengkai.html">
+        <span class="pillar__avatar"><img src="assets/team/gaozhengkai.jpg" alt="高征铠" /></span>
+        <span class="pillar__name">高征铠</span>
+        <span class="pillar__role">炼钢</span>
+      </a>
+      <a class="pillar" href="zhaochengping.html">
+        <span class="pillar__avatar"><img src="assets/team/zhaochengping.jpg" alt="赵承平" /></span>
+        <span class="pillar__name">赵承平</span>
+        <span class="pillar__role">冶金</span>
+      </a>
+      <a class="pillar" href="gongmingying.html">
+        <span class="pillar__avatar"><img src="assets/team/gongmingying.jpg" alt="龚明英" /></span>
+        <span class="pillar__name">龚明英</span>
+        <span class="pillar__role">冶金</span>
+      </a>
+      <a class="pillar" href="qiaozhiyu.html">
+        <span class="pillar__avatar"><img src="assets/team/qiaozhiyu.jpg" alt="乔芝郁" /></span>
+        <span class="pillar__name">乔芝郁</span>
+        <span class="pillar__role">稀有金属</span>
+      </a>
+      <a class="pillar" href="gongyueyun.html">
+        <span class="pillar__avatar"><img src="assets/team/gongyueyun.jpg" alt="宫月云" /></span>
+        <span class="pillar__name">宫月云</span>
+        <span class="pillar__role">燕园校友会会长</span>
+      </a>
+      <a class="pillar" href="chennanxian.html">
+        <span class="pillar__avatar"><img src="assets/team/chennanxian.jpg" alt="陈难先" /></span>
+        <span class="pillar__name">陈难先</span>
+        <span class="pillar__role">中国科学院院士</span>
+      </a>
+      <a class="pillar" href="lifushen.html">
+        <span class="pillar__avatar"><img src="assets/team/lifushen.jpg" alt="李福燊" /></span>
+        <span class="pillar__name">李福燊</span>
+        <span class="pillar__role">冶金物理化学</span>
+      </a>
+      <a class="pillar" href="zuoyonglin.html">
+        <span class="pillar__avatar"><img src="assets/team/zuoyonglin.jpg" alt="左永林" /></span>
+        <span class="pillar__name">左永林</span>
+        <span class="pillar__role">高级工程师</span>
+      </a>
+      <a class="pillar" href="lushouli.html">
+        <span class="pillar__avatar"><img src="assets/team/lushouli.jpg" alt="鹿守理" /></span>
+        <span class="pillar__name">鹿守理</span>
+        <span class="pillar__role">燕园校友会首任会长</span>
+      </a>
+      <a class="pillar" href="shixizheng.html">
+        <span class="pillar__avatar"><img src="assets/team/shixizheng.jpg" alt="史希正" /></span>
+        <span class="pillar__name">史希正</span>
+        <span class="pillar__role">金属物理</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ===== 联系我们 ===== -->
+  <section class="section contact reveal" id="contact">
+    <div class="section-head">
+      <div class="eyebrow">Contact</div>
+      <h2><span class="en">FOLLOW US</span>联系我们</h2>
+    </div>
+
+    <div class="contact__grid">
+      <div class="contact__item">
+        <div class="flip" tabindex="0">
+          <div class="flip__inner">
+            <div class="flip__face flip__front"><img src="assets/logos/bilibili.png" alt="哔哩哔哩" /></div>
+            <div class="flip__face flip__back"><img src="assets/qr/bilibili.png" alt="哔哩哔哩二维码" /></div>
+          </div>
+        </div>
+        <div class="contact__name">哔哩哔哩</div>
+      </div>
+
+      <div class="contact__item">
+        <div class="flip" tabindex="0">
+          <div class="flip__inner">
+            <div class="flip__face flip__front"><img src="assets/logos/douyin.png" alt="抖音" /></div>
+            <div class="flip__face flip__back"><img src="assets/qr/douyin.png" alt="抖音二维码" /></div>
+          </div>
+        </div>
+        <div class="contact__name">抖音</div>
+      </div>
+
+      <div class="contact__item">
+        <div class="flip" tabindex="0">
+          <div class="flip__inner">
+            <div class="flip__face flip__front"><img src="assets/logos/weixin.png" alt="视频号" /></div>
+            <div class="flip__face flip__back"><img src="assets/qr/shipin.jpg" alt="视频号二维码" /></div>
+          </div>
+        </div>
+        <div class="contact__name">视频号</div>
+      </div>
+
+      <div class="contact__item">
+        <div class="flip" tabindex="0">
+          <div class="flip__inner">
+            <div class="flip__face flip__front"><img src="assets/logos/xiaohongshu.png" alt="小红书" /></div>
+            <div class="flip__face flip__back"><img src="assets/qr/xiaohongshu.jpg" alt="小红书二维码" /></div>
+          </div>
+        </div>
+        <div class="contact__name">小红书</div>
+      </div>
+
+      <div class="contact__item">
+        <div class="flip" tabindex="0">
+          <div class="flip__inner">
+            <div class="flip__face flip__front"><img src="assets/logos/weibo.png" alt="微博" /></div>
+            <div class="flip__face flip__back"><img src="assets/qr/weibo.png" alt="微博二维码" /></div>
+          </div>
+        </div>
+        <div class="contact__name">微博</div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<script>
+  (function(){
+    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var els = document.querySelectorAll('.reveal');
+    if(reduce || !('IntersectionObserver' in window)){
+      els.forEach(function(el){ el.classList.add('is-in'); });
+    } else {
+      var io = new IntersectionObserver(function(entries){
+        entries.forEach(function(e){
+          if(e.isIntersecting){ e.target.classList.add('is-in'); io.unobserve(e.target); }
+        });
+      }, { threshold:0.12 });
+      els.forEach(function(el){ io.observe(el); });
+    }
+
+    // 导航高亮：滚动时高亮当前分区
+    var links = document.querySelectorAll('.nav__link');
+    var sections = ['about','pillars','contact'];
+    window.addEventListener('scroll', function(){
+      var y = window.scrollY + 120;
+      var current = null;
+      sections.forEach(function(id){
+        var sec = document.getElementById(id);
+        if(sec && sec.offsetTop <= y){ current = id; }
+      });
+      links.forEach(function(l){
+        var href = l.getAttribute('href').replace('#','');
+        l.classList.toggle('is-active', href === current);
+      });
+    }, { passive:true });
+  })();
+</script>
+</body>
+</html>

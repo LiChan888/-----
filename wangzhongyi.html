@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>王忠忆 · 口述校史档案</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=IBM+Plex+Mono:wght@400;500&family=Ma+Shan+Zheng&family=Noto+Serif+SC:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/common.css" />
+<style>
+  .hero{ padding:56px 0 20px; }
+  .hero .card{ padding:40px 36px 30px; }
+  .hero__top{ display:flex; justify-content:space-between; align-items:flex-start; gap:16px; }
+  .hero__meta{
+    font-family:var(--font-mono);
+    font-size:11px;
+    letter-spacing:.18em;
+    color:var(--blueblack);
+    text-transform:uppercase;
+    line-height:2;
+  }
+  .hero__meta .shelf{ display:block; font-size:10px; color:rgba(32,43,62,.5); }
+  .hero__name{
+    font-family:var(--font-display);
+    font-weight:900;
+    font-size:72px;
+    line-height:1.05;
+    letter-spacing:.06em;
+    margin:30px 0 6px;
+  }
+  .hero__role{
+    font-size:17px;
+    color:var(--blueblack);
+    letter-spacing:.04em;
+    padding-bottom:22px;
+    border-bottom:1px solid rgba(32,43,62,.2);
+  }
+  .hero__role .mono{ font-family:var(--font-mono); font-size:14px; }
+  .hero__quote{
+    margin-top:22px;
+    font-size:16px;
+    line-height:2;
+    color:var(--ink);
+    padding-left:18px;
+    border-left:3px solid var(--stamp);
+    font-style:normal;
+  }
+  .hero__quote .who{
+    display:block;
+    margin-top:10px;
+    font-family:var(--font-sign);
+    font-size:22px;
+    color:var(--blueblack);
+    letter-spacing:.1em;
+  }
+
+  .crumb{
+    padding:20px 0 0;
+    font-family:var(--font-mono);
+    font-size:12px;
+    letter-spacing:.1em;
+    color:rgba(32,43,62,.6);
+  }
+  .crumb a{ color:var(--blueblack); }
+  .crumb a:hover{ color:var(--stamp); }
+
+  .photos{ padding:64px 0 8px; }
+  .photos__grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:22px; }
+  .photo{
+    background:#FBF9F2;
+    padding:9px 9px 0;
+    box-shadow:0 1px 2px rgba(32,43,62,.12), 0 8px 20px -10px rgba(32,43,62,.4);
+  }
+  .photo:nth-child(1){ transform:rotate(-1.6deg); }
+  .photo:nth-child(2){ transform:rotate(1.2deg); }
+  .photo:nth-child(3){ transform:rotate(-.6deg); }
+  .photo img{ display:block; width:100%; height:auto; filter:sepia(.1) contrast(1.02) saturate(.94); }
+  .photo figcaption{
+    display:flex; align-items:center; justify-content:space-between; gap:8px;
+    padding:8px 2px 6px;
+  }
+  .photo figcaption .cap{ font-family:var(--font-sign); font-size:16px; color:var(--blueblack); }
+  .photo figcaption .no{ font-family:var(--font-mono); font-size:10px; letter-spacing:.1em; color:rgba(32,43,62,.5); }
+
+  @media (max-width:640px){
+    .hero__name{ font-size:54px; }
+  }
+
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav__inner">
+    <a class="nav__brand" href="index.html">
+      <span class="badge-logo"><img src="assets/team/badge.jpg" alt="满井溯源·理苑拾光 队徽" /></span>
+      <span class="nav__name">满井溯源·理苑拾光<small>Oral History Archive</small></span>
+    </a>
+    <div class="nav__links">
+      <a class="nav__link" href="index.html#about">关于我们</a>
+      <div class="nav__dropdown">
+        <a class="nav__link is-active" href="index.html#pillars">钢铁脊梁<span class="nav__caret">▾</span></a>
+        <div class="nav__menu" role="menu">
+          <a class="nav__menu-item" href="qinbenyi.html">秦本一</a>
+          <a class="nav__menu-item" href="chenli.html">陈力</a>
+          <a class="nav__menu-item" href="wangzhongyi.html">王忠忆</a>
+          <a class="nav__menu-item" href="hanjuyuan.html">韩菊元</a>
+          <a class="nav__menu-item" href="gaozhengkai.html">高征铠</a>
+          <a class="nav__menu-item" href="zhaochengping.html">赵承平</a>
+          <a class="nav__menu-item" href="gongmingying.html">龚明英</a>
+          <a class="nav__menu-item" href="qiaozhiyu.html">乔芝郁</a>
+          <a class="nav__menu-item" href="gongyueyun.html">宫月云</a>
+          <a class="nav__menu-item" href="chennanxian.html">陈难先</a>
+          <a class="nav__menu-item" href="lifushen.html">李福燊</a>
+          <a class="nav__menu-item" href="zuoyonglin.html">左永林</a>
+          <a class="nav__menu-item" href="lushouli.html">鹿守理</a>
+          <a class="nav__menu-item" href="shixizheng.html">史希正</a>
+        </div>
+      </div>
+      <a class="nav__link" href="index.html#contact">联系我们</a>
+    </div>
+  </div>
+</nav>
+
+<div class="wrap">
+
+  <div class="crumb"><a href="index.html">首页</a> / <a href="index.html#pillars">钢铁脊梁</a> / 王忠忆</div>
+
+  <header class="hero">
+    <div class="card">
+      <div class="hero__top">
+        <div class="hero__meta">
+          理苑拾光小队 · 口述校史档案
+          <span class="shelf">INTERVIEW ARCHIVE</span>
+        </div>
+        <div class="stamp stamp--lg">口述实录</div>
+      </div>
+      <h1 class="hero__name">王忠忆</h1>
+      <p class="hero__role">
+        <span class="mono">USTB</span>　北京钢铁学院 · 体操队队长 · 粉末冶金研究所高级工程师
+      </p>
+      <blockquote class="hero__quote">
+        我喜爱这个，我就投入。
+        <span class="who">—— 王忠忆</span>
+      </blockquote>
+    </div>
+  </header>
+
+    <section class="photos reveal">
+    <div class="section-head">
+      <div class="eyebrow">Photos</div>
+      <h2><span class="en">ARCHIVE PHOTOS</span>档案照片</h2>
+    </div>
+    <div class="photos__grid">
+      <figure class="photo">
+        <img src="assets/photos/wangzhongyi-1.jpg" alt="采访王忠忆老师 · 现场之一" loading="lazy" />
+        <figcaption><span class="cap">采访现场</span><span class="no">PH-01</span></figcaption>
+      </figure>
+      <figure class="photo">
+        <img src="assets/photos/wangzhongyi-2.jpg" alt="采访王忠忆老师 · 现场之二" loading="lazy" />
+        <figcaption><span class="cap">采访现场</span><span class="no">PH-02</span></figcaption>
+      </figure>
+      <figure class="photo">
+        <img src="assets/photos/wangzhongyi-3.jpg" alt="采访王忠忆老师 · 现场之三" loading="lazy" />
+        <figcaption><span class="cap">采访现场</span><span class="no">PH-03</span></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="dossier reveal">
+    <div class="section-head">
+      <div class="eyebrow">Dossier</div>
+      <h2><span class="en">PERSONNEL FILE</span>人物档案</h2>
+    </div>
+    <div class="card">
+      <div class="dossier__row">
+        <div class="dossier__label">求学</div>
+        <div class="dossier__value">北京钢铁学院校友，是燕园校友会中入学最早、最年长的三位校友之一（与秦本一、龚明英同期）。</div>
+      </div>
+      <div class="dossier__row">
+        <div class="dossier__label">体育</div>
+        <div class="dossier__value">在校任<em>体操队（艺术体操队）队长</em>，获北京市体操比赛冠军。</div>
+      </div>
+      <div class="dossier__row">
+        <div class="dossier__label">专业履历</div>
+        <div class="dossier__value">毕业后在北京粉末冶金研究所工作，高级工程师。</div>
+      </div>
+      <div class="dossier__row">
+        <div class="dossier__label">家庭</div>
+        <div class="dossier__value">丈夫为楼大鹏先生（已故），为北京奥运会成功举办作出重要贡献。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="timeline reveal">
+    <div class="section-head">
+      <div class="eyebrow">Chronology</div>
+      <h2><span class="en">TIMELINE</span>年谱</h2>
+    </div>
+    <ul class="timeline__list">
+      <li class="timeline__item is-key">
+        <div class="timeline__year">求学年代</div>
+        <div class="timeline__text">入北京钢铁学院，任体操队队长，获北京市体操比赛冠军。</div>
+      </li>
+      <li class="timeline__item">
+        <div class="timeline__year">实习</div>
+        <div class="timeline__text">赴四川重庆钢铁公司参加生产实习，参与设计实践。</div>
+      </li>
+      <li class="timeline__item is-key">
+        <div class="timeline__year">毕业后</div>
+        <div class="timeline__text">入北京粉末冶金研究所，高级工程师。</div>
+      </li>
+      <li class="timeline__item">
+        <div class="timeline__year">至今</div>
+        <div class="timeline__text">燕园校友会入学最早、最年长的三位校友之一，93 岁身体硬朗。</div>
+      </li>
+    </ul>
+  </section>
+
+  <section class="qa reveal">
+    <div class="section-head">
+      <div class="eyebrow">Oral History</div>
+      <h2><span class="en">QUESTION &amp; ANSWER</span>口述问答</h2>
+    </div>
+
+    <div class="qa__list">
+
+      <article class="card">
+        <div class="card__head">
+          <div class="card__code"><b>Q-01</b> · 口述访谈</div>
+          <div class="stamp stamp--sm">口述</div>
+        </div>
+        <h3 class="card__q"><span class="asker">问 · 队员</span>您当时因为什么契机进入北京钢铁学院？</h3>
+        <div class="card__a">
+          <p>我一直就在北京读书，也一直在钢铁系统，所以就一直走下去了，还是在钢铁系统。</p>
+        </div>
+        <div class="card__sign">
+          <span class="name">王忠忆</span>
+          <span class="role">受访人 · 口述</span>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__head">
+          <div class="card__code"><b>Q-02</b> · 口述访谈</div>
+          <div class="stamp stamp--sm">口述</div>
+        </div>
+        <h3 class="card__q"><span class="asker">问 · 队员</span>您在校时是体操队队长，能讲讲当年的训练吗？</h3>
+        <div class="card__a">
+          <p>当时我还是体操运动员、体操队长，一个脑筋就是这项体育，别的什么都没想过，就是喜爱这个运动。实际上我的个子太高了，作为体操运动员不太合适，但当时我还得了北京市体操比赛的冠军，我还挺得意的。只喜欢这个，脑子只想这个，没想别的任何的，就是我喜爱这个，我就投入，我觉得我投入还行，那我就很努力，听教练的。</p>
+        </div>
+        <div class="card__sign">
+          <span class="name">王忠忆</span>
+          <span class="role">受访人 · 口述</span>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__head">
+          <div class="card__code"><b>Q-03</b> · 口述访谈</div>
+          <div class="stamp stamp--sm">口述</div>
+        </div>
+        <h3 class="card__q"><span class="asker">问 · 队员</span>高芸生院长提出“一参三改三结合”教学理念，对您有什么影响？</h3>
+        <div class="card__a">
+          <p>好像我是在四川重庆钢铁公司，那时候我们就为他们设计一些什么，小的那个，大的还没敢做呢，还没做到那一步呢，就是一种实习的经历。</p>
+        </div>
+        <div class="card__sign">
+          <span class="name">王忠忆</span>
+          <span class="role">受访人 · 口述</span>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__head">
+          <div class="card__code"><b>Q-04</b> · 口述访谈</div>
+          <div class="stamp stamp--sm">口述</div>
+        </div>
+        <h3 class="card__q"><span class="asker">问 · 队员</span>楼大鹏先生为中国体育倾注一生，您怎么看他这份事业？</h3>
+        <div class="card__a">
+          <p>从我和他接触开始，他就全力以赴投入中国的体育，挺努力的，而且做得也很出色。他英文比较好，接触外国的东西也多，所以很多规矩就随之而入了，对咱们的专业就很容易顺水就流下去了，这点一般的运动员或者热爱体育的人不容易达到。我很尊重他，所以我支持配合他去做这些工作。</p>
+        </div>
+        <div class="card__sign">
+          <span class="name">王忠忆</span>
+          <span class="role">受访人 · 口述</span>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__head">
+          <div class="card__code"><b>Q-05</b> · 口述访谈</div>
+          <div class="stamp stamp--sm">口述</div>
+        </div>
+        <h3 class="card__q"><span class="asker">问 · 队员</span>您在粉末冶金行业深耕多年，觉得钢铁精神最重要的内涵是什么？</h3>
+        <div class="card__a">
+          <p>也很难说……反正就是一个艰苦奋斗的那种感觉。</p>
+        </div>
+        <div class="card__sign">
+          <span class="name">王忠忆</span>
+          <span class="role">受访人 · 口述</span>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <footer class="footer reveal">
+    <div class="card">
+      <div class="footer__title">采编档案 · EDITORIAL NOTE</div>
+      <p>本文档为“满井溯源·理苑拾光小队”采访韩菊元、王忠忆两位老师的口述整理，聚焦王忠忆老师部分。王老师是燕园校友会入学最早、最年长的三位校友之一，在校任体操队队长、获北京市体操比赛冠军，毕业后在北京粉末冶金研究所任高级工程师，也是楼大鹏先生夫人，93 岁身体硬朗。</p>
+      <div class="crew">采访：满井溯源实践团成员　·　资料来源：韩菊元、王忠忆老师采访稿</div>
+    </div>
+  </footer>
+
+</div>
+
+<script>
+  (function(){
+    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var els = document.querySelectorAll('.reveal');
+    if(reduce || !('IntersectionObserver' in window)){
+      els.forEach(function(el){ el.classList.add('is-in'); });
+      return;
+    }
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if(e.isIntersecting){ e.target.classList.add('is-in'); io.unobserve(e.target); }
+      });
+    }, { threshold:0.12 });
+    els.forEach(function(el){ io.observe(el); });
+  })();
+</script>
+</body>
+</html>

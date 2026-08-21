@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>陈力 · 口述校史档案</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=IBM+Plex+Mono:wght@400;500&family=Ma+Shan+Zheng&family=Noto+Serif+SC:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/common.css" />
+<style>
+  .hero{ padding:56px 0 20px; }
+  .hero .card{ padding:40px 36px 30px; }
+  .hero__top{ display:flex; justify-content:space-between; align-items:flex-start; gap:16px; }
+  .hero__meta{
+    font-family:var(--font-mono);
+    font-size:11px;
+    letter-spacing:.18em;
+    color:var(--blueblack);
+    text-transform:uppercase;
+    line-height:2;
+  }
+  .hero__meta .shelf{ display:block; font-size:10px; color:rgba(32,43,62,.5); }
+  .hero__name{
+    font-family:var(--font-display);
+    font-weight:900;
+    font-size:72px;
+    line-height:1.05;
+    letter-spacing:.06em;
+    margin:30px 0 6px;
+  }
+  .hero__role{
+    font-size:17px;
+    color:var(--blueblack);
+    letter-spacing:.04em;
+    padding-bottom:22px;
+    border-bottom:1px solid rgba(32,43,62,.2);
+  }
+  .hero__role .mono{ font-family:var(--font-mono); font-size:14px; }
+  .hero__quote{
+    margin-top:22px;
+    font-size:16px;
+    line-height:2;
+    color:var(--ink);
+    padding-left:18px;
+    border-left:3px solid var(--stamp);
+    font-style:normal;
+  }
+  .hero__quote .who{
+    display:block;
+    margin-top:10px;
+    font-family:var(--font-sign);
+    font-size:22px;
+    color:var(--blueblack);
+    letter-spacing:.1em;
+  }
+  .hero__foot{ margin-top:22px; }
+
+  .crumb{
+    padding:20px 0 0;
+    font-family:var(--font-mono);
+    font-size:12px;
+    letter-spacing:.1em;
+    color:rgba(32,43,62,.6);
+  }
+  .crumb a{ color:var(--blueblack); }
+  .crumb a:hover{ color:var(--stamp); }
+
+  .photos{ padding:64px 0 8px; }
+  .photos__grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:22px; }
+  .photo{
+    background:#FBF9F2;
+    padding:9px 9px 0;
+    box-shadow:0 1px 2px rgba(32,43,62,.12), 0 8px 20px -10px rgba(32,43,62,.4);
+  }
+  .photo:nth-child(1){ transform:rotate(-1.6deg); }
+  .photo:nth-child(2){ transform:rotate(1.2deg); }
+  .photo:nth-child(3){ transform:rotate(-.6deg); }
+  .photo img{ display:block; width:100%; height:auto; filter:sepia(.1) contrast(1.02) saturate(.94); }
+  .photo figcaption{
+    display:flex; align-items:center; justify-content:space-between; gap:8px;
+    padding:8px 2px 6px;
+  }
+  .photo figcaption .cap{ font-family:var(--font-sign); font-size:16px; color:var(--blueblack); }
+  .photo figcaption .no{ font-family:var(--font-mono); font-size:10px; letter-spacing:.1em; color:rgba(32,43,62,.5); }
+
+  @media (max-width:640px){
+    .photos__grid{ grid-template-columns:1fr; }
+    .hero__name{ font-size:54px; }
+  }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav__inner">
+    <a class="nav__brand" href="index.html">
+      <span class="badge-logo"><img src="assets/team/badge.jpg" alt="满井溯源·理苑拾光 队徽" /></span>
+      <span class="nav__name">满井溯源·理苑拾光<small>Oral History Archive</small></span>
+    </a>
+    <div class="nav__links">
+      <a class="nav__link" href="index.html#about">关于我们</a>
+      <div class="nav__dropdown">
+        <a class="nav__link is-active" href="index.html#pillars">钢铁脊梁<span class="nav__caret">▾</span></a>
+        <div class="nav__menu" role="menu">
+          <a class="nav__menu-item" href="qinbenyi.html">秦本一</a>
+          <a class="nav__menu-item" href="chenli.html">陈力</a>
+          <a class="nav__menu-item" href="wangzhongyi.html">王忠忆</a>
+          <a class="nav__menu-item" href="hanjuyuan.html">韩菊元</a>
+          <a class="nav__menu-item" href="gaozhengkai.html">高征铠</a>
+          <a class="nav__menu-item" href="zhaochengping.html">赵承平</a>
+          <a class="nav__menu-item" href="gongmingying.html">龚明英</a>
+          <a class="nav__menu-item" href="qiaozhiyu.html">乔芝郁</a>
+          <a class="nav__menu-item" href="gongyueyun.html">宫月云</a>
+          <a class="nav__menu-item" href="chennanxian.html">陈难先</a>
+          <a class="nav__menu-item" href="lifushen.html">李福燊</a>
+          <a class="nav__menu-item" href="zuoyonglin.html">左永林</a>
+          <a class="nav__menu-item" href="lushouli.html">鹿守理</a>
+          <a class="nav__menu-item" href="shixizheng.html">史希正</a>
+        </div>
+      </div>
+      <a class="nav__link" href="index.html#contact">联系我们</a>
+    </div>
+  </div>
+</nav>
+
+<div class="wrap">
+
+  <div class="crumb"><a href="index.html">首页</a> / <a href="index.html#pillars">钢铁脊梁</a> / 陈力</div>
+
+  <header class="hero">
+    <div class="card">
+      <div class="hero__top">
+        <div class="hero__meta">
+          理苑拾光小队 · 口述校史档案
+          <span class="shelf">INTERVIEW ARCHIVE · 7月26日</span>
+        </div>
+        <div class="stamp stamp--lg">口述实录</div>
+      </div>
+      <h1 class="hero__name">陈力</h1>
+      <p class="hero__role">
+        <span class="mono">TJU-1960</span>　天津大学 1960 届 · 自动化 · 电工基础 · 十三载班主任
+      </p>
+      <blockquote class="hero__quote">
+        做老师是很幸福的事。
+        <span class="who">—— 陈力</span>
+      </blockquote>
+    </div>
+  </header>
+
+  <section class="photos reveal">
+    <div class="section-head">
+      <div class="eyebrow">Photos</div>
+      <h2><span class="en">ARCHIVE PHOTOS</span>档案照片</h2>
+    </div>
+    <div class="photos__grid">
+      <figure class="photo">
+        <img src="assets/photos/chenli-1.jpg" alt="陈力教授展示电902班定制纪念衫" loading="lazy" />
+        <figcaption><span class="cap">电902班纪念衫</span><span class="no">PH-01</span></figcaption>
+      </figure>
+      <figure class="photo">
+        <img src="assets/photos/chenli-2.jpg" alt="陈力教授展示材料963班毕业纪念册" loading="lazy" />
+        <figcaption><span class="cap">材料963班纪念册</span><span class="no">PH-02</span></figcaption>
+      </figure>
+      <figure class="photo">
+        <img src="assets/photos/chenli-3.jpg" alt="陈力教授翻看毕业纪念册" loading="lazy" />
+        <figcaption><span class="cap">纪念册 · 亲笔留言</span><span class="no">PH-03</span></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="dossier reveal">
+    <div class="section-head">
+      <div class="eyebrow">Dossier</div>
+      <h2><span class="en">PERSONNEL FILE</span>人物档案</h2>
+    </div>
+    <div class="card">
+      <div class="dossier__row">
+        <div class="dossier__label">求学</div>
+        <div class="dossier__value">天津大学自动化专业，1960 年毕业。父亲在清华任教、家在北京，毕业时本欲去工厂，被朋友劝说改填北京钢铁学院。</div>
+      </div>
+      <div class="dossier__row">
+        <div class="dossier__label">专业履历</div>
+        <div class="dossier__value">服从分配入校，隶属自动化系电工基础教研室，从助教、讲师、副教授至教授，主讲电工技术、电子技术两门基础课。</div>
+      </div>
+      <div class="dossier__row">
+        <div class="dossier__label">育人 · 班主任</div>
+        <div class="dossier__value">先后带三届班级——仪表 89 班（三年）、自动化电 901 / 电 902 班（四年）、材料 963 试点班（柯俊院士创办）。<em>十三载班主任</em>，退休后仍带班至学生毕业。</div>
+      </div>
+      <div class="dossier__row">
+        <div class="dossier__label">荣誉</div>
+        <div class="dossier__value">2000 年学校两百届毕业生，入选“学生心目中最优秀十位教师”；先后获各级优秀班主任证书与专项奖励。</div>
+      </div>
+      <div class="dossier__row">
+        <div class="dossier__label">家庭</div>
+        <div class="dossier__value">两个女儿、三位外孙女，晚辈十分孝顺；现入住养老社区安享晚年。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="timeline reveal">
+    <div class="section-head">
+      <div class="eyebrow">Chronology</div>
+      <h2><span class="en">TIMELINE</span>年谱</h2>
+    </div>
+    <ul class="timeline__list">
+      <li class="timeline__item is-key">
+        <div class="timeline__year">1960</div>
+        <div class="timeline__text">天津大学自动化专业毕业，服从分配，骑自行车到北京钢铁学院报到。</div>
+      </li>
+      <li class="timeline__item">
+        <div class="timeline__year">任教初期</div>
+        <div class="timeline__text">入电工基础教研室，从助教起步，主讲电工技术、电子技术两门基础课。</div>
+      </li>
+      <li class="timeline__item">
+        <div class="timeline__year">1989 级</div>
+        <div class="timeline__text">担任仪表 89 班班主任（三年）。</div>
+      </li>
+      <li class="timeline__item is-key">
+        <div class="timeline__year">1990 级</div>
+        <div class="timeline__text">完整带自动化电 901、电 902 两个班（四年）。</div>
+      </li>
+      <li class="timeline__item">
+        <div class="timeline__year">1996 级</div>
+        <div class="timeline__text">临近退休，柯俊院士创办材料 963 试点班，指定担任班主任，退休后带班直至学生毕业。</div>
+      </li>
+      <li class="timeline__item is-key">
+        <div class="timeline__year">2000</div>
+        <div class="timeline__text">学校两百届毕业生，入选“学生心目中最优秀十位教师”，十字路口橱窗长期展示。</div>
+      </li>
+      <li class="timeline__item">
+        <div class="timeline__year">至今</div>
+        <div class="timeline__text">入住养老社区，愿捐赠 T 恤、纪念册、荣誉证书等一手校史史料。</div>
+      </li>
+    </ul>
+  </section>
+
+  <section class="qa reveal">
+    <div class="section-head">
+      <div class="eyebrow">Oral History</div>
+      <h2><span class="en">QUESTION &amp; ANSWER</span>口述问答</h2>
+    </div>
+
+    <div class="qa__list">
+
+      <article class="card">
+        <div class="card__head">
+          <div class="card__code"><b>Q-01</b> · 访谈 · 7月26日</div>
+          <div class="stamp stamp--sm">口述</div>
+        </div>
+        <h3 class="card__q"><span class="asker">问 · 柴静悠</span>您是天津大学毕业，当年为什么选择来北京钢铁学院任教？</h3>
+        <div class="card__a">
+          <p>我是服从分配。1960 年毕业时，大部分同学都想去工厂，我当时想填报洛阳轴承厂。朋友们劝我——父亲在清华任教，家就在北京，帮我改填了北京钢铁学院，我就直接拉着行李、骑自行车到校报到。</p>
+        </div>
+        <div class="card__sign">
+          <span class="name">陈力</span>
+          <span class="role">受访人 · 口述</span>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__head">
+          <div class="card__code"><b>Q-02</b> · 访谈 · 7月26日</div>
+          <div class="stamp stamp--sm">口述</div>
+        </div>
+        <h3 class="card__q"><span class="asker">问 · 柴静悠</span>您多年担任班主任，还获评优秀班主任，带班期间有没有印象深刻的学生与故事？</h3>
+        <div class="card__a">
+          <p>我隶属自动化系电工基础教研室。教研室主任是天大校友，看中我在校成绩优异，就让我跳过农村锻炼环节直接留校任教。从助教起步，逐步晋升讲师、副教授、教授，主讲电工技术、电子技术两门基础课。和专业课不同，没有那么多论文，授课、实验、习题批改都一人带，和学生接触紧密，反响很好，便安排我担任班主任。</p>
+          <p>先后带三届班级：仪表 89 班，带三年；自动化电 901、电 902 两个班，完整带四年；临近退休，柯俊院士创办材料 963 试点班，指定我担任班主任，退休后带班直至学生毕业。我除了搞基础课，还和电化教研室一起搞电化教学片，教学就丰富一点。十三年的班主任经历，先后获得各级优秀班主任证书，还拿到优秀班主任专项奖励。</p>
+          <p>2000 年学校两百届毕业生，团委、学生会发起全校学生投票，评选“学生心目中最优秀十位教师”，我成功入选。毕业晚会专门发放邀请函，十大教师照片在校内十字路口橱窗长期展示，晚会现场公开表彰。这份荣誉我一直留着，邀请函、晚会节目单、荣誉证书全套资料都在。</p>
+          <p>电 902 班毕业时拿全班定制纪念 T 恤送我，印着 “四载同窗，二十年后再会”，我都没敢穿，一直妥善保存，愿意捐赠给校史存档，未来放进雄安新校区校史馆。</p>
+          <p>还有材料 963 班毕业纪念册，附上照片与亲笔留言。前不久八位年过五十的毕业生专程组团来探望，翻看纪念册十分感慨。其中一名学生幼年丧母，事业有成后重逢，说“看到我就像看到母亲一样”，很感动。请他们在食堂用餐，带他们参观养老社区生活——做老师是很幸福的事。这份纪念册我可以捐赠给学校，优秀教师评选全套纸质资料你们可以拍照留存，原件我还想留下做纪念。</p>
+        </div>
+        <div class="card__sign">
+          <span class="name">陈力</span>
+          <span class="role">受访人 · 口述</span>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__head">
+          <div class="card__code"><b>Q-03</b> · 访谈 · 7月26日</div>
+          <div class="stamp stamp--sm">口述</div>
+        </div>
+        <h3 class="card__q"><span class="asker">问 · 柴静悠</span>您对当下从事自动化专业的青年教师、在校学子，有哪些想分享的人生经验？</h3>
+        <div class="card__a">
+          <p>最重要的一点，一定要不断地丰富自己。我自己也感到现在比较落后了，好多新东西得重新去学。</p>
+          <p>另外，跟同学的关系很重要——上课那么多人爱听你的课，和人家很凑合地在那儿听，是完全不一样的，要互相有交流。所以我都是准时上课、准时下课，别拖堂，自己准备要比较充分。还要能吸引他：内容他书本上能知道很多，但你要能很生动地把它讲出来。有些同学说“老师，我们挺喜欢听你的声音的”。</p>
+          <p>我觉得，一定要不断地丰富自己。</p>
+        </div>
+        <div class="card__sign">
+          <span class="name">陈力</span>
+          <span class="role">受访人 · 口述</span>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__head">
+          <div class="card__code"><b>Q-04</b> · 访谈 · 7月26日</div>
+          <div class="stamp stamp--sm">口述</div>
+        </div>
+        <h3 class="card__q"><span class="asker">问 · 柴静悠</span>此前习近平总书记给我校老教授回信，提出“坚持特色，争创一流”。您扎根教学数十年，认为学校争创一流核心依靠什么？</h3>
+        <div class="card__a">
+          <p>核心是创新。教师持续更新教学方法、学生不断探索新技术，才能办好教育、让学生有广阔发展前景。</p>
+          <p>我的外孙女在美国密歇根大学攻读计算机研究生，专业更新速度极快，不持续学习就很容易落后。我有两个女儿、三位外孙女，晚辈都很孝顺。他们不在身边，我们入住养老社区，他们更放心些，社区配备紧急呼叫拉绳，也有智能助手，几分钟就有工作人员赶来，就医配套也很完善。</p>
+        </div>
+        <div class="card__sign">
+          <span class="name">陈力</span>
+          <span class="role">受访人 · 口述</span>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <footer class="footer reveal">
+    <div class="card">
+      <div class="footer__title">采编档案 · EDITORIAL NOTE</div>
+      <p>本文档为“理苑拾光小队”采访秦本一、陈力教授（夫妻）的口述整理，聚焦陈力教授部分。受访教授愿将电 902 班纪念 T 恤、材料 963 班毕业纪念册、优秀教师评选证书等一手校史史料捐赠雄安新校区校史馆。</p>
+      <div class="crew">采访人：柴静悠　刘钰韬　宰志莘　·　访谈日期：7月26日</div>
+    </div>
+  </footer>
+
+</div>
+
+<script>
+  (function(){
+    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var els = document.querySelectorAll('.reveal');
+    if(reduce || !('IntersectionObserver' in window)){
+      els.forEach(function(el){ el.classList.add('is-in'); });
+      return;
+    }
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if(e.isIntersecting){ e.target.classList.add('is-in'); io.unobserve(e.target); }
+      });
+    }, { threshold:0.12 });
+    els.forEach(function(el){ io.observe(el); });
+  })();
+</script>
+</body>
+</html>
